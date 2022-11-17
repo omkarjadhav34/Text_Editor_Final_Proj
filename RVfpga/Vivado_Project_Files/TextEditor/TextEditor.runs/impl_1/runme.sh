@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/jadha/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/impl_1'
+HD_PWD='C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log rvfpganexys.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source rvfpganexys.tcl -notrace
 
 

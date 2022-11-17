@@ -1,5 +1,5 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/jadha/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/rvfpganexys.xdc rfile:../../../../../src/rvfpganexys.xdc id:1} [current_design]
-set_property SRC_FILE_INFO {cfile:C:/Users/jadha/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/LiteDRAM/liteDRAM.xdc rfile:../../../../../src/LiteDRAM/liteDRAM.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/rvfpganexys.xdc rfile:../../../../../src/rvfpganexys.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/LiteDRAM/liteDRAM.xdc rfile:../../../../../src/LiteDRAM/liteDRAM.xdc id:2} [current_design]
 set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN A3    IOSTANDARD LVCMOS33 } [get_ports { VGA_R[0] }]; #IO_L8N_T1_AD14N_35 Sch=vga_r[0]
 set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]
@@ -154,6 +154,10 @@ set_property src_info {type:XDC file:1 line:109 export:INPUT save:INPUT read:REA
 set_property -dict { PACKAGE_PIN F15   IOSTANDARD LVCMOS33 } [get_ports { accel_sclk }]; #IO_L14P_T2_SRCC_15 Sch=acl_sclk
 set_property src_info {type:XDC file:1 line:110 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN D15   IOSTANDARD LVCMOS33 } [get_ports { o_accel_cs_n }];
+set_property src_info {type:XDC file:1 line:113 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN F4    IOSTANDARD LVCMOS33 } [get_ports { PS2_CLK }]; #IO_L13P_T2_MRCC_35 Sch=ps2_clk
+set_property src_info {type:XDC file:1 line:114 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN B2    IOSTANDARD LVCMOS33 } [get_ports { PS2_DATA }]; #IO_L10N_T1_AD15N_35 Sch=ps2_data
 set_property src_info {type:XDC file:2 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property LOC M4 [get_ports ddram_a[0]]
 set_property src_info {type:XDC file:2 line:6 export:INPUT save:INPUT read:READ} [current_design]

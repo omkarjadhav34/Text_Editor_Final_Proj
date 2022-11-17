@@ -94,7 +94,12 @@ module swervolf_core
     output wire [3:0]   vga_g,
     output wire [3:0]   vga_b,
     output wire         vga_hs,
-    output wire         vga_vs
+    output wire         vga_vs,
+    ////////
+    
+    input  wire PS2_CLK,
+    input  wire  PS2_DATA
+    
     );
 
    localparam BOOTROM_SIZE = 32'h1000;
@@ -365,7 +370,9 @@ module swervolf_core
         .ext_padoe_o   (en_gpio));
  /*    
    wire [11:0] spr_row, spr_col;   
-   
+   */
+
+
    keyboard_top keyboard_module(
         .wb_clk_i     (clk), 
         .wb_rst_i     (wb_rst), 
@@ -377,15 +384,13 @@ module swervolf_core
         .wb_stb_i     (wb_m2s_keyboard_stb), 
         .wb_dat_o     (wb_s2m_keyboard_dat),
         .wb_ack_o     (wb_s2m_keyboard_ack), 
-        .wb_err_o     (wb_s2m_keyboard_err)
+        .wb_err_o     (wb_s2m_keyboard_err),
         // External pushbttn Interface
-        
-        .pb_data_i    ({BTNC,BTNU,BTNL,BTNR,BTND}),
-        .pointerRow   (spr_row),
-        .pointerColumn (spr_col)
-        
+        ////////// write top signals here
+        .PS2_CLK(PS2_CLK),
+        .PS2_DATA(PS2_DATA)
         );
-      */
+      
    // VGA
     vga vga(
         // control inputs

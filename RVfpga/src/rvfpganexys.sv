@@ -62,7 +62,9 @@ module rvfpganexys
     output wire [3:0]   VGA_G,
     output wire [3:0]   VGA_B,
     output wire         VGA_HS,
-    output wire         VGA_VS 
+    output wire         VGA_VS, 
+    input wire PS2_CLK,
+    input wire PS2_DATA
     );
 
    wire [15:0] 	       gpio_out;
@@ -292,7 +294,9 @@ module rvfpganexys
       .vga_b        (VGA_B),
       .vga_vs       (VGA_VS), 
       .vga_hs       (VGA_HS),
-      .clk_vga          (clk_31_5)
+      .clk_vga      (clk_31_5),
+      .PS2_CLK(PS2_CLK),
+      .PS2_DATA(PS2_DATA)
 );
 
    always @(posedge clk_core) begin

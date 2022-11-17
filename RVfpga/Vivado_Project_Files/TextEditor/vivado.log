@@ -1,0 +1,112 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Nov 16 12:51:25 2022
+# Process ID: 42536
+# Current directory: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent41812 C:\Users\raghv\OneDrive\Desktop\FPGA_Proj\Text_Editor_Final_Proj\RVfpga\Vivado_Project_Files\TextEditor\TextEditor.xpr
+# Log file: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/vivado.log
+# Journal file: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor'
+INFO: [Project 1-313] Project file moved from 'C:/Users/jadha/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+CRITICAL WARNING: [Common 17-1649] The Vivado message database 'C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/vivado.pb' contains 20506 messages. Restoring all messages from this message database will impact Vivado performance, so only WARNING, CRITICAL WARNING, and ERROR messages will be restored. To restore all messages from this file use the tcl command 'set_param messaging.loadPbLimit 20507' and re-open the project.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 883.301 ; gain = 128.141
+WARNING: [filemgmt 56-315] Source scanning failed during design analysis. To get more details run synthesis or simulation and check the log.
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-315] Source scanning failed during design analysis. To get more details run synthesis or simulation and check the log.
+WARNING: [filemgmt 56-315] Source scanning failed during design analysis. To get more details run synthesis or simulation and check the log.
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-315] Source scanning failed during design analysis. To get more details run synthesis or simulation and check the log.
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-315] Source scanning failed during design analysis. To get more details run synthesis or simulation and check the log.
+WARNING: [filemgmt 56-315] Source scanning failed during design analysis. To get more details run synthesis or simulation and check the log.
+WARNING: [filemgmt 56-315] Source scanning failed during design analysis. To get more details run synthesis or simulation and check the log.
+WARNING: [filemgmt 56-315] Source scanning failed during design analysis. To get more details run synthesis or simulation and check the log.
+reset_run synth_1
+WARNING: [filemgmt 56-315] Source scanning failed during design analysis. To get more details run synthesis or simulation and check the log.
+launch_runs synth_1 -jobs 14
+WARNING: [filemgmt 20-644] Circular Reference Found: '.xil_defaultlib.popcount' [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv:0] -->> '.xil_defaultlib.popcount' [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv:19]
+[Wed Nov 16 14:46:37 2022] Launched synth_1...
+Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 14
+WARNING: [filemgmt 56-315] Source scanning failed during design analysis. To get more details run synthesis or simulation and check the log.
+WARNING: [filemgmt 20-644] Circular Reference Found: '.xil_defaultlib.popcount' [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv:0] -->> '.xil_defaultlib.popcount' [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv:19]
+[Wed Nov 16 14:48:54 2022] Launched synth_1...
+Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [filemgmt 56-315] Source scanning failed during design analysis. To get more details run synthesis or simulation and check the log.
+launch_runs synth_1 -jobs 14
+WARNING: [filemgmt 20-644] Circular Reference Found: '.xil_defaultlib.popcount' [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv:0] -->> '.xil_defaultlib.popcount' [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv:19]
+[Wed Nov 16 14:52:14 2022] Launched synth_1...
+Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 14
+WARNING: [filemgmt 56-315] Source scanning failed during design analysis. To get more details run synthesis or simulation and check the log.
+WARNING: [filemgmt 20-644] Circular Reference Found: '.xil_defaultlib.popcount' [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv:0] -->> '.xil_defaultlib.popcount' [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv:19]
+[Wed Nov 16 14:59:52 2022] Launched synth_1...
+Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [filemgmt 56-315] Source scanning failed during design analysis. To get more details run synthesis or simulation and check the log.
+launch_runs synth_1 -jobs 14
+WARNING: [filemgmt 20-644] Circular Reference Found: '.xil_defaultlib.popcount' [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv:0] -->> '.xil_defaultlib.popcount' [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv:19]
+[Wed Nov 16 15:04:56 2022] Launched synth_1...
+Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log
+WARNING: [filemgmt 56-315] Source scanning failed during design analysis. To get more details run synthesis or simulation and check the log.
+reset_run synth_1
+launch_runs synth_1 -jobs 14
+WARNING: [filemgmt 20-644] Circular Reference Found: '.xil_defaultlib.popcount' [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv:0] -->> '.xil_defaultlib.popcount' [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv:19]
+[Wed Nov 16 15:26:45 2022] Launched synth_1...
+Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log
+WARNING: [filemgmt 56-315] Source scanning failed during design analysis. To get more details run synthesis or simulation and check the log.
+reset_run synth_1
+launch_runs synth_1 -jobs 14
+WARNING: [filemgmt 20-644] Circular Reference Found: '.xil_defaultlib.popcount' [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv:0] -->> '.xil_defaultlib.popcount' [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv:19]
+[Wed Nov 16 15:28:57 2022] Launched synth_1...
+Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log
+WARNING: [filemgmt 56-315] Source scanning failed during design analysis. To get more details run synthesis or simulation and check the log.
+reset_run synth_1
+WARNING: [filemgmt 56-315] Source scanning failed during design analysis. To get more details run synthesis or simulation and check the log.
+launch_runs synth_1 -jobs 14
+WARNING: [filemgmt 20-644] Circular Reference Found: '.xil_defaultlib.popcount' [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv:0] -->> '.xil_defaultlib.popcount' [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv:19]
+[Wed Nov 16 15:31:01 2022] Launched synth_1...
+Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log
+WARNING: [filemgmt 56-315] Source scanning failed during design analysis. To get more details run synthesis or simulation and check the log.
+reset_run synth_1
+launch_runs synth_1 -jobs 14
+WARNING: [filemgmt 20-644] Circular Reference Found: '.xil_defaultlib.popcount' [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv:0] -->> '.xil_defaultlib.popcount' [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv:19]
+[Wed Nov 16 15:32:56 2022] Launched synth_1...
+Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 14
+WARNING: [filemgmt 20-644] Circular Reference Found: '.xil_defaultlib.popcount' [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv:0] -->> '.xil_defaultlib.popcount' [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv:19]
+[Wed Nov 16 15:35:18 2022] Launched synth_1...
+Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 14
+WARNING: [filemgmt 20-644] Circular Reference Found: '.xil_defaultlib.popcount' [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv:0] -->> '.xil_defaultlib.popcount' [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv:19]
+[Wed Nov 16 15:36:04 2022] Launched synth_1...
+Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log
+WARNING: [filemgmt 56-315] Source scanning failed during design analysis. To get more details run synthesis or simulation and check the log.
+CRITICAL WARNING: [Common 17-1649] The Vivado message database 'C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/vivado.pb' contains 20530 messages. Restoring all messages from this message database will impact Vivado performance, so only WARNING, CRITICAL WARNING, and ERROR messages will be restored. To restore all messages from this file use the tcl command 'set_param messaging.loadPbLimit 20531' and re-open the project.
+launch_runs impl_1 -jobs 14
+[Wed Nov 16 15:51:09 2022] Launched impl_1...
+Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/impl_1/runme.log
+WARNING: [filemgmt 56-315] Source scanning failed during design analysis. To get more details run synthesis or simulation and check the log.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 14
+[Wed Nov 16 16:16:32 2022] Launched synth_1...
+Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log
+[Wed Nov 16 16:16:32 2022] Launched impl_1...
+Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/impl_1/runme.log
+CRITICAL WARNING: [Common 17-1649] The Vivado message database 'C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/vivado.pb' contains 20538 messages. Restoring all messages from this message database will impact Vivado performance, so only WARNING, CRITICAL WARNING, and ERROR messages will be restored. To restore all messages from this file use the tcl command 'set_param messaging.loadPbLimit 20539' and re-open the project.

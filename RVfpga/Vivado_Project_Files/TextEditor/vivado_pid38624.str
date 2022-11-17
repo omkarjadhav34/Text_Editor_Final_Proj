@@ -1,0 +1,1640 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 38624
+License: Customer
+
+Current time: 	Wed Nov 16 12:51:34 PST 2022
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1920x1080
+Screen resolution (DPI): 150
+Available screens: 1
+Available disk space: 365 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=18
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	raghv
+User home directory: C:/Users/raghv
+User working directory: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.2
+RDI_DATADIR: C:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/raghv/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/raghv/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/raghv/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/vivado.log
+Vivado journal file location: 	C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/vivado.jou
+Engine tmp dir: 	C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/.Xil/Vivado-38624-Raghvendra
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	188 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 697 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\raghv\OneDrive\Desktop\FPGA_Proj\Text_Editor_Final_Proj\RVfpga\Vivado_Project_Files\TextEditor\TextEditor.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor' 
+// HMemoryUtils.trashcanNow. Engine heap size: 706 MB. GUI used memory: 57 MB. Current time: 11/16/22, 12:51:36 PM PST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 85 MB (+86153kb) [00:00:16]
+// [Engine Memory]: 772 MB (+657508kb) [00:00:16]
+// [GUI Memory]: 100 MB (+12037kb) [00:00:17]
+// [Engine Memory]: 825 MB (+15447kb) [00:00:17]
+// [GUI Memory]: 113 MB (+7826kb) [00:00:17]
+// [GUI Memory]: 124 MB (+5974kb) [00:00:19]
+// WARNING: HEventQueue.dispatchEvent() is taking  4738 ms.
+// Tcl Message: open_project C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor' INFO: [Project 1-313] Project file moved from 'C:/Users/jadha/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// WARNING: HEventQueue.dispatchEvent() is taking  1121 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 877.395 ; gain = 139.141 
+// Project name: TextEditor; location: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor; part: xc7a100tcsg324-1
+// [Engine Memory]: 889 MB (+23501kb) [00:00:21]
+// [Engine Memory]: 938 MB (+5777kb) [00:00:22]
+dismissDialog("Open Project"); // bB (cr)
+// a (cr): Critical Messages: addNotify
+// [GUI Memory]: 136 MB (+5691kb) [00:00:26]
+// [Engine Memory]: 988 MB (+2912kb) [00:00:26]
+dismissDialog("Critical Messages"); // a (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 988 MB. GUI used memory: 74 MB. Current time: 11/16/22, 12:51:51 PM PST
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA (aL, cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 12 seconds
+selectButton(RDIResource.AbstractSearchablePanel_SHOW_SEARCH, "Sources_search"); // x (f, cr): TRUE
+// WARNING: HEventQueue.dispatchEvent() is taking  1383 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1118 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1094 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1081 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1117 ms.
+// Elapsed time: 30 seconds
+setText("PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD", "key"); // OverlayTextField (C, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, keyboard_top (keyboard.v)]", 1, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, keyboard_top (keyboard.v)]", 1, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("keyboard.v", 179, 206); // ch (w, cr)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+// Elapsed time: 40 seconds
+typeControlKey((HResource) null, "keyboard.v", 'v'); // ch (w, cr)
+selectCodeEditor("keyboard.v", 48, 165); // ch (w, cr)
+// [GUI Memory]: 144 MB (+1414kb) [00:03:08]
+// Elapsed time: 116 seconds
+selectCodeEditor("keyboard.v", 186, 564); // ch (w, cr)
+// Elapsed time: 62 seconds
+selectCodeEditor("keyboard.v", 28, 286); // ch (w, cr)
+selectCodeEditor("keyboard.v", 178, 75); // ch (w, cr)
+typeControlKey((HResource) null, "keyboard.v", 'v'); // ch (w, cr)
+selectCodeEditor("keyboard.v", 28, 142); // ch (w, cr)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA
+setText("PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD", (String) null); // OverlayTextField (C, cr)
+// WARNING: HEventQueue.dispatchEvent() is taking  2919 ms.
+// [GUI Memory]: 151 MB (+26kb) [00:05:56]
+// [GUI Memory]: 159 MB (+517kb) [00:05:58]
+// WARNING: HEventQueue.dispatchEvent() is taking  7738 ms.
+// Elapsed time: 23 seconds
+setText("PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD", "rvfpgane"); // OverlayTextField (C, cr)
+// [GUI Memory]: 167 MB (+87kb) [00:06:08]
+// WARNING: HEventQueue.dispatchEvent() is taking  6680 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7418 ms.
+// Elapsed time: 17 seconds
+setText("PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD", "rvfpganexys.xdc", true); // OverlayTextField (C, cr)
+// [GUI Memory]: 177 MB (+1653kb) [00:06:28]
+// WARNING: HEventQueue.dispatchEvent() is taking  7223 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, rvfpganexys.xdc]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, rvfpganexys.xdc]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, rvfpganexys.xdc]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, rvfpganexys.xdc]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, rvfpganexys.xdc]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, rvfpganexys.xdc]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, rvfpganexys.xdc]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, rvfpganexys.xdc]", 2, false); // B (F, cr)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+selectCodeEditor("rvfpganexys.xdc", 1018, 550); // ch (w, cr)
+// Elapsed time: 59 seconds
+typeControlKey((HResource) null, "rvfpganexys.xdc", 'v'); // ch (w, cr)
+selectCodeEditor("rvfpganexys.xdc", 1330, 498); // ch (w, cr)
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 187 MB (+491kb) [00:07:44]
+// WARNING: HEventQueue.dispatchEvent() is taking  8441 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6627 ms. Increasing delay to 19881 ms.
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,011 MB. GUI used memory: 89 MB. Current time: 11/16/22, 12:59:15 PM PST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 71 ms. Decreasing delay to 2071 ms.
+// Elapsed time: 125 seconds
+typeControlKey((HResource) null, "keyboard.v", 'v'); // ch (w, cr)
+// Elapsed time: 22 seconds
+selectCodeEditor("keyboard.v", 689, 395); // ch (w, cr)
+// Elapsed time: 22 seconds
+selectCodeEditor("keyboard.v", 107, 246); // ch (w, cr)
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+selectCodeEditor("keyboard.v", 219, 172); // ch (w, cr)
+selectCodeEditor("keyboard.v", 196, 191); // ch (w, cr)
+// Elapsed time: 24 seconds
+selectCodeEditor("keyboard.v", 38, 447); // ch (w, cr)
+selectCodeEditor("keyboard.v", 226, 273); // ch (w, cr)
+selectCodeEditor("keyboard.v", 291, 266); // ch (w, cr)
+selectCodeEditor("keyboard.v", 425, 263); // ch (w, cr)
+selectCodeEditor("keyboard.v", 450, 329); // ch (w, cr)
+// Elapsed time: 34 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 2); // i (h, cr)
+// Elapsed time: 76 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1, false, true); // i (h, cr) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1, false, true); // i (h, cr) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+selectCodeEditor("keyboard.v", 199, 417); // ch (w, cr)
+// Elapsed time: 71 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 2); // i (h, cr)
+selectCodeEditor("rvfpganexys.xdc", 1330, 577); // ch (w, cr)
+typeControlKey((HResource) null, "rvfpganexys.xdc", 'v'); // ch (w, cr)
+// Elapsed time: 14 seconds
+typeControlKey(null, null, 'z');
+// Elapsed time: 58 seconds
+typeControlKey((HResource) null, "rvfpganexys.xdc", 'v'); // ch (w, cr)
+selectCodeEditor("rvfpganexys.xdc", 1327, 531); // ch (w, cr)
+selectCodeEditor("rvfpganexys.xdc", 1384, 467); // ch (w, cr)
+selectCodeEditor("rvfpganexys.xdc", 4, 489); // ch (w, cr)
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  8178 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 7392 ms. Increasing delay to 22176 ms.
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+selectCodeEditor("keyboard.v", 339, 450); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+selectCodeEditor("keyboard.v", 480, 361); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("keyboard.v", 227, 280); // ch (w, cr)
+// WARNING: HEventQueue.dispatchEvent() is taking  6933 ms.
+// Elapsed time: 13 seconds
+selectCodeEditor("keyboard.v", 151, 340); // ch (w, cr)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 70 ms. Decreasing delay to 2070 ms.
+selectCodeEditor("keyboard.v", 272, 360); // ch (w, cr)
+selectCodeEditor("keyboard.v", 175, 305); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("keyboard.v", 329, 286); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("keyboard.v", 144, 206); // ch (w, cr)
+selectCodeEditor("keyboard.v", 187, 157); // ch (w, cr)
+selectCodeEditor("keyboard.v", 340, 358); // ch (w, cr)
+selectCodeEditor("keyboard.v", 188, 154); // ch (w, cr)
+selectCodeEditor("keyboard.v", 712, 349); // ch (w, cr)
+typeControlKey((HResource) null, "keyboard.v", 'v'); // ch (w, cr)
+selectCodeEditor("keyboard.v", 329, 275); // ch (w, cr)
+selectCodeEditor("keyboard.v", 191, 119); // ch (w, cr)
+selectCodeEditor("keyboard.v", 387, 334); // ch (w, cr)
+selectCodeEditor("keyboard.v", 36, 138); // ch (w, cr)
+selectCodeEditor("keyboard.v", 86, 160); // ch (w, cr)
+selectCodeEditor("keyboard.v", 138, 160); // ch (w, cr)
+selectCodeEditor("keyboard.v", 220, 194); // ch (w, cr)
+selectCodeEditor("keyboard.v", 50, 269); // ch (w, cr)
+typeControlKey(null, null, 'z');
+selectCodeEditor("keyboard.v", 512, 372); // ch (w, cr)
+// Elapsed time: 30 seconds
+selectCodeEditor("keyboard.v", 147, 403); // ch (w, cr)
+selectCodeEditor("keyboard.v", 103, 460); // ch (w, cr)
+selectCodeEditor("keyboard.v", 323, 494); // ch (w, cr)
+selectCodeEditor("keyboard.v", 150, 467); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+// Elapsed time: 40 seconds
+selectCodeEditor("keyboard.v", 436, 398); // ch (w, cr)
+// Elapsed time: 69 seconds
+selectCodeEditor("keyboard.v", 443, 290, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("keyboard.v", 325, 276); // ch (w, cr)
+typeControlKey(null, null, 'z');
+selectCodeEditor("keyboard.v", 265, 275); // ch (w, cr)
+selectCodeEditor("keyboard.v", 42, 360); // ch (w, cr)
+typeControlKey((HResource) null, "keyboard.v", 'v'); // ch (w, cr)
+selectCodeEditor("keyboard.v", 609, 211); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("keyboard.v", 108, 343); // ch (w, cr)
+selectCodeEditor("keyboard.v", 290, 444); // ch (w, cr)
+selectCodeEditor("keyboard.v", 232, 366); // ch (w, cr)
+selectCodeEditor("keyboard.v", 326, 395); // ch (w, cr)
+selectCodeEditor("keyboard.v", 98, 384); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("keyboard.v", 472, 435); // ch (w, cr)
+selectCodeEditor("keyboard.v", 153, 392); // ch (w, cr)
+selectCodeEditor("keyboard.v", 364, 482); // ch (w, cr)
+// Elapsed time: 20 seconds
+selectCodeEditor("keyboard.v", 408, 88); // ch (w, cr)
+// Elapsed time: 19 seconds
+selectCodeEditor("keyboard.v", 151, 493); // ch (w, cr)
+typeControlKey((HResource) null, "keyboard.v", 'c'); // ch (w, cr)
+selectCodeEditor("keyboard.v", 391, 84); // ch (w, cr)
+typeControlKey((HResource) null, "keyboard.v", 'v'); // ch (w, cr)
+selectCodeEditor("keyboard.v", 143, 515); // ch (w, cr)
+selectCodeEditor("keyboard.v", 491, 92); // ch (w, cr)
+typeControlKey((HResource) null, "keyboard.v", 'v'); // ch (w, cr)
+selectCodeEditor("keyboard.v", 120, 541); // ch (w, cr)
+typeControlKey((HResource) null, "keyboard.v", 'c'); // ch (w, cr)
+selectCodeEditor("keyboard.v", 590, 100); // ch (w, cr)
+selectCodeEditor("keyboard.v", 590, 82); // ch (w, cr)
+typeControlKey((HResource) null, "keyboard.v", 'v'); // ch (w, cr)
+selectCodeEditor("keyboard.v", 806, 481); // ch (w, cr)
+selectCodeEditor("keyboard.v", 785, 505); // ch (w, cr)
+selectCodeEditor("keyboard.v", 718, 369); // ch (w, cr)
+selectCodeEditor("keyboard.v", 696, 128); // ch (w, cr)
+// Elapsed time: 21 seconds
+selectCodeEditor("keyboard.v", 234, 495); // ch (w, cr)
+selectCodeEditor("keyboard.v", 101, 493); // ch (w, cr)
+selectCodeEditor("keyboard.v", 102, 497); // ch (w, cr)
+selectCodeEditor("keyboard.v", 177, 486); // ch (w, cr)
+selectCodeEditor("keyboard.v", 395, 99); // ch (w, cr)
+// Elapsed time: 36 seconds
+selectCodeEditor("keyboard.v", 233, 475); // ch (w, cr)
+selectCodeEditor("keyboard.v", 236, 450); // ch (w, cr)
+selectCodeEditor("keyboard.v", 228, 485); // ch (w, cr)
+selectCodeEditor("keyboard.v", 261, 511); // ch (w, cr)
+selectCodeEditor("keyboard.v", 222, 542); // ch (w, cr)
+selectCodeEditor("keyboard.v", 446, 443); // ch (w, cr)
+// Elapsed time: 21 seconds
+selectCodeEditor("keyboard.v", 109, 461); // ch (w, cr)
+typeControlKey((HResource) null, "keyboard.v", 'c'); // ch (w, cr)
+selectCodeEditor("keyboard.v", 642, 97); // ch (w, cr)
+typeControlKey((HResource) null, "keyboard.v", 'v'); // ch (w, cr)
+selectCodeEditor("keyboard.v", 1072, 502); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("keyboard.v", 227, 336); // ch (w, cr)
+selectCodeEditor("keyboard.v", 101, 388); // ch (w, cr)
+selectCodeEditor("keyboard.v", 120, 415); // ch (w, cr)
+selectCodeEditor("keyboard.v", 123, 440); // ch (w, cr)
+selectCodeEditor("keyboard.v", 121, 462); // ch (w, cr)
+selectCodeEditor("keyboard.v", 381, 444); // ch (w, cr)
+selectCodeEditor("keyboard.v", 38, 491); // ch (w, cr)
+selectCodeEditor("keyboard.v", 367, 95); // ch (w, cr)
+selectCodeEditor("keyboard.v", 610, 94); // ch (w, cr)
+selectCodeEditor("keyboard.v", 261, 314); // ch (w, cr)
+selectCodeEditor("keyboard.v", 261, 314, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "keyboard.v", 'c'); // ch (w, cr)
+selectCodeEditor("keyboard.v", 653, 26); // ch (w, cr)
+selectCodeEditor("keyboard.v", 653, 15); // ch (w, cr)
+selectCodeEditor("keyboard.v", 669, 17); // ch (w, cr)
+selectCodeEditor("keyboard.v", 552, 44); // ch (w, cr)
+selectCodeEditor("keyboard.v", 556, 42); // ch (w, cr)
+selectCodeEditor("keyboard.v", 660, 41); // ch (w, cr)
+typeControlKey((HResource) null, "keyboard.v", 'v'); // ch (w, cr)
+selectCodeEditor("keyboard.v", 508, 415); // ch (w, cr)
+selectCodeEditor("keyboard.v", 192, 492); // ch (w, cr)
+selectCodeEditor("keyboard.v", 36, 524); // ch (w, cr)
+selectCodeEditor("keyboard.v", 213, 495); // ch (w, cr)
+selectCodeEditor("keyboard.v", 267, 486); // ch (w, cr)
+selectCodeEditor("keyboard.v", 73, 505); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("keyboard.v", 249, 493); // ch (w, cr)
+selectCodeEditor("keyboard.v", 152, 499); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("keyboard.v", 506, 36); // ch (w, cr)
+selectCodeEditor("keyboard.v", 627, 49); // ch (w, cr)
+selectCodeEditor("keyboard.v", 627, 49, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("keyboard.v", 567, 37); // ch (w, cr)
+selectCodeEditor("keyboard.v", 263, 491); // ch (w, cr)
+selectCodeEditor("keyboard.v", 620, 41); // ch (w, cr)
+selectCodeEditor("keyboard.v", 574, 46); // ch (w, cr)
+selectCodeEditor("keyboard.v", 680, 43); // ch (w, cr)
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 2); // i (h, cr)
+selectCodeEditor("rvfpganexys.xdc", 816, 439); // ch (w, cr)
+// [GUI Memory]: 200 MB (+4352kb) [00:28:12]
+typeControlKey((HResource) null, "rvfpganexys.xdc", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+selectCodeEditor("keyboard.v", 562, 94); // ch (w, cr)
+selectCodeEditor("keyboard.v", 643, 91); // ch (w, cr)
+typeControlKey((HResource) null, "keyboard.v", 'v'); // ch (w, cr)
+selectCodeEditor("keyboard.v", 908, 224); // ch (w, cr)
+selectCodeEditor("keyboard.v", 787, 356); // ch (w, cr)
+selectCodeEditor("keyboard.v", 329, 387); // ch (w, cr)
+selectCodeEditor("keyboard.v", 263, 384); // ch (w, cr)
+typeControlKey((HResource) null, "keyboard.v", 'v'); // ch (w, cr)
+selectCodeEditor("keyboard.v", 495, 409); // ch (w, cr)
+selectCodeEditor("keyboard.v", 450, 394); // ch (w, cr)
+selectCodeEditor("keyboard.v", 20, 409); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 2); // i (h, cr)
+// Elapsed time: 71 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+// Elapsed time: 215 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 2); // i (h, cr)
+selectCodeEditor("rvfpganexys.xdc", 193, 541); // ch (w, cr)
+selectCodeEditor("rvfpganexys.xdc", 123, 497); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("rvfpganexys.xdc", 2, 410); // ch (w, cr)
+selectCodeEditor("rvfpganexys.xdc", 1005, 270); // ch (w, cr)
+typeControlKey((HResource) null, "rvfpganexys.xdc", 'v'); // ch (w, cr)
+selectCodeEditor("rvfpganexys.xdc", 2, 301); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+selectCodeEditor("keyboard.v", 387, 99); // ch (w, cr)
+// Elapsed time: 20 seconds
+selectCodeEditor("keyboard.v", 291, 463); // ch (w, cr)
+// Elapsed time: 159 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 2); // i (h, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,015 MB. GUI used memory: 91 MB. Current time: 11/16/22, 1:29:17 PM PST
+// Elapsed time: 113 seconds
+selectCodeEditor("rvfpganexys.xdc", 1381, 357); // ch (w, cr)
+selectCodeEditor("rvfpganexys.xdc", 433, 315); // ch (w, cr)
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  8216 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 7225 ms. Increasing delay to 21675 ms.
+// Elapsed time: 12 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA
+unMinimizeFrame(RDIResource.RDIViews_PROPERTIES, "Properties"); // aA
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 63 ms. Decreasing delay to 2063 ms.
+// Elapsed time: 33 seconds
+selectCodeEditor("rvfpganexys.xdc", 209, 336); // ch (w, cr)
+// WARNING: HEventQueue.dispatchEvent() is taking  6396 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7525 ms.
+// Elapsed time: 32 seconds
+setText("PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD", "nexys"); // OverlayTextField (C, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+selectCodeEditor("keyboard.v", 636, 125); // ch (w, cr)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpganexys (rvfpganexys.sv)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpganexys (rvfpganexys.sv)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("rvfpganexys.sv", 362, 360); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 2); // i (h, cr)
+// Elapsed time: 35 seconds
+selectCodeEditor("rvfpganexys.xdc", 320, 347); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+typeControlKey((HResource) null, "rvfpganexys.sv", 'v'); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 90, 393); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 176, 425); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 222, 411); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 155, 310); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 110, 311); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 334, 293); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 114, 313); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 116, 334); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 112, 335); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 286, 367); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 282, 340); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 278, 377); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 366, 539); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 381, 539); // ch (w, cr)
+// WARNING: HEventQueue.dispatchEvent() is taking  3567 ms.
+// Elapsed time: 62 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi4_to_ahb (axi4_to_ahb.sv)]", 24); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cb_filter (cb_filter.sv)]", 25); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpganexys (rvfpganexys.sv)]", 23); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpganexys (rvfpganexys.sv), swervolf : swervolf_core (swervolf_core.v)]", 29); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpganexys (rvfpganexys.sv), swervolf : swervolf_core (swervolf_core.v)]", 29, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rvfpganexys (rvfpganexys.sv), swervolf : swervolf_core (swervolf_core.v)]", 29, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("swervolf_core.v", 362, 323); // ch (w, cr)
+// Elapsed time: 29 seconds
+selectCodeEditor("swervolf_core.v", 205, 257); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 90, 266); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 128, 213); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 136, 179); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 109, 542); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 218, 412); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 354, 463); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("swervolf_core.v", 271, 481); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 292, 390); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 358, 255); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("keyboard.v", 234, 314); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+selectCodeEditor("rvfpganexys.sv", 267, 216); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 267, 216, false, false, false, false, true); // ch (w, cr) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+selectCodeEditor("keyboard.v", 207, 334); // ch (w, cr)
+selectCodeEditor("keyboard.v", 266, 310); // ch (w, cr)
+selectCodeEditor("keyboard.v", 284, 359); // ch (w, cr)
+selectCodeEditor("keyboard.v", 270, 246); // ch (w, cr)
+selectCodeEditor("keyboard.v", 53, 271); // ch (w, cr)
+selectCodeEditor("keyboard.v", 167, 147); // ch (w, cr)
+selectCodeEditor("keyboard.v", 174, 140); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("keyboard.v", 50, 261); // ch (w, cr)
+selectCodeEditor("keyboard.v", 163, 143); // ch (w, cr)
+selectCodeEditor("keyboard.v", 143, 244); // ch (w, cr)
+selectCodeEditor("keyboard.v", 78, 248); // ch (w, cr)
+selectCodeEditor("keyboard.v", 110, 316); // ch (w, cr)
+selectCodeEditor("keyboard.v", 111, 338); // ch (w, cr)
+selectCodeEditor("keyboard.v", 62, 204); // ch (w, cr)
+// Elapsed time: 55 seconds
+selectCodeEditor("keyboard.v", 44, 361); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("keyboard.v", 192, 370); // ch (w, cr)
+selectCodeEditor("keyboard.v", 106, 117); // ch (w, cr)
+selectCodeEditor("keyboard.v", 114, 132); // ch (w, cr)
+selectCodeEditor("keyboard.v", 156, 165); // ch (w, cr)
+selectCodeEditor("keyboard.v", 229, 195); // ch (w, cr)
+selectCodeEditor("keyboard.v", 59, 101); // ch (w, cr)
+selectCodeEditor("keyboard.v", 64, 137); // ch (w, cr)
+selectCodeEditor("keyboard.v", 71, 168); // ch (w, cr)
+selectCodeEditor("keyboard.v", 78, 192); // ch (w, cr)
+selectCodeEditor("keyboard.v", 214, 229); // ch (w, cr)
+selectCodeEditor("keyboard.v", 58, 170); // ch (w, cr)
+selectCodeEditor("keyboard.v", 182, 167); // ch (w, cr)
+selectCodeEditor("keyboard.v", 183, 340); // ch (w, cr)
+selectCodeEditor("keyboard.v", 127, 86); // ch (w, cr)
+selectCodeEditor("keyboard.v", 139, 103); // ch (w, cr)
+selectCodeEditor("keyboard.v", 148, 187); // ch (w, cr)
+selectCodeEditor("keyboard.v", 117, 145); // ch (w, cr)
+// Elapsed time: 19 seconds
+selectCodeEditor("keyboard.v", 146, 187); // ch (w, cr)
+selectCodeEditor("keyboard.v", 138, 217); // ch (w, cr)
+// Elapsed time: 29 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("keyboard.v", 224, 228); // ch (w, cr)
+selectCodeEditor("keyboard.v", 115, 296); // ch (w, cr)
+selectCodeEditor("keyboard.v", 272, 396); // ch (w, cr)
+selectCodeEditor("keyboard.v", 364, 353); // ch (w, cr)
+selectCodeEditor("keyboard.v", 424, 229); // ch (w, cr)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("keyboard.v", 329, 473); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+selectCodeEditor("rvfpganexys.sv", 408, 502); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 306, 393); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 298, 367); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+selectCodeEditor("rvfpganexys.sv", 242, 392); // ch (w, cr)
+// Elapsed time: 52 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+selectCodeEditor("keyboard.v", 807, 96); // ch (w, cr)
+selectCodeEditor("keyboard.v", 707, 468); // ch (w, cr)
+selectCodeEditor("keyboard.v", 862, 506); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 2); // i (h, cr)
+// Elapsed time: 49 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+selectCodeEditor("rvfpganexys.sv", 289, 295); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+selectCodeEditor("swervolf_core.v", 481, 350); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 467, 389); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+selectCodeEditor("keyboard.v", 177, 485); // ch (w, cr)
+typeControlKey((HResource) null, "keyboard.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+typeControlKey((HResource) null, "swervolf_core.v", 'v'); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 201, 368); // ch (w, cr)
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+selectCodeEditor("swervolf_core.v", 171, 427); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+selectCodeEditor("keyboard.v", 39, 337); // ch (w, cr)
+selectCodeEditor("keyboard.v", 267, 390); // ch (w, cr)
+selectCodeEditor("keyboard.v", 354, 445); // ch (w, cr)
+selectCodeEditor("keyboard.v", 162, 392); // ch (w, cr)
+selectCodeEditor("keyboard.v", 283, 404); // ch (w, cr)
+selectCodeEditor("keyboard.v", 769, 93); // ch (w, cr)
+selectCodeEditor("keyboard.v", 832, 171); // ch (w, cr)
+selectCodeEditor("keyboard.v", 771, 107); // ch (w, cr)
+selectCodeEditor("keyboard.v", 662, 104); // ch (w, cr)
+selectCodeEditor("keyboard.v", 651, 89); // ch (w, cr)
+selectCodeEditor("keyboard.v", 741, 142); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+typeControlKey((HResource) null, "swervolf_core.v", 'v'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+selectCodeEditor("keyboard.v", 53, 463); // ch (w, cr)
+selectCodeEditor("keyboard.v", 53, 463, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("keyboard.v", 53, 463); // ch (w, cr)
+selectCodeEditor("keyboard.v", 41, 459); // ch (w, cr)
+typeControlKey((HResource) null, "keyboard.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+typeControlKey((HResource) null, "swervolf_core.v", 'v'); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 498, 464); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 211, 364); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 415, 395); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 79, 398); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 126, 435); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 164, 388); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 292, 415); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 438, 490); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 123, 384); // ch (w, cr)
+// Elapsed time: 144 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+selectCodeEditor("keyboard.v", 413, 474); // ch (w, cr)
+selectCodeEditor("keyboard.v", 350, 540); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,015 MB. GUI used memory: 90 MB. Current time: 11/16/22, 1:59:18 PM PST
+// Elapsed time: 766 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+selectCodeEditor("swervolf_core.v", 389, 376); // ch (w, cr)
+// Elapsed time: 35 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("rvfpganexys.sv", 378, 348); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 362, 366); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 261, 387); // ch (w, cr)
+typeControlKey((HResource) null, "rvfpganexys.sv", 'v'); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 181, 393); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 175, 411); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("rvfpganexys.sv", 119, 393); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 62, 387); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 302, 427); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 135, 389); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 386, 383); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+selectCodeEditor("swervolf_core.v", 437, 318); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("swervolf_core.v", 435, 461); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 369, 408); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 305, 397); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 302, 394); // ch (w, cr)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 2); // i (h, cr)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 2); // i (h, cr)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 2); // i (h, cr)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 2); // i (h, cr)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 2, false, true); // i (h, cr) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+// Elapsed time: 47 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+// Elapsed time: 71 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+// Elapsed time: 37 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+// Elapsed time: 29 seconds
+selectCodeEditor("rvfpganexys.sv", 500, 435); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+selectCodeEditor("swervolf_core.v", 393, 326); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 179, 240); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 113, 242); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 290, 252); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 254, 231); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+// Elapsed time: 39 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+selectCodeEditor("rvfpganexys.sv", 148, 279); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 146, 286); // ch (w, cr)
+// Elapsed time: 29 seconds
+selectCodeEditor("rvfpganexys.sv", 501, 389); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 369, 302); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 115, 289); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 336, 285); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 687, 393); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 245, 288); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 415, 319); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 580, 391); // ch (w, cr)
+// Elapsed time: 39 seconds
+selectCodeEditor("rvfpganexys.sv", 312, 429); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+selectCodeEditor("swervolf_core.v", 416, 248); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 400, 363); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+selectCodeEditor("rvfpganexys.sv", 254, 402); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 655, 390); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 679, 471); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 288, 422); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 691, 297); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("rvfpganexys.sv", 167, 292); // ch (w, cr)
+typeControlKey((HResource) null, "rvfpganexys.sv", 'c'); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("rvfpganexys.sv", 158, 365); // ch (w, cr)
+typeControlKey((HResource) null, "rvfpganexys.sv", 'v'); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 242, 359); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 507, 422); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 403, 412); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 545, 163); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+selectCodeEditor("swervolf_core.v", 270, 314); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("swervolf_core.v", 176, 496); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 149, 462); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+selectCodeEditor("keyboard.v", 168, 307); // ch (w, cr)
+selectCodeEditor("keyboard.v", 168, 307, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("keyboard.v", 178, 307); // ch (w, cr)
+selectCodeEditor("keyboard.v", 178, 307, false, false, false, false, true); // ch (w, cr) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+selectCodeEditor("swervolf_core.v", 171, 461); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 196, 238); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 196, 238, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+// Elapsed time: 22 seconds
+selectCodeEditor("rvfpganexys.sv", 288, 488); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("rvfpganexys.sv", 549, 472); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+selectCodeEditor("rvfpganexys.sv", 180, 311); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 310, 290); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 473, 354); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("swervolf_core.v", 298, 188); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 327, 225); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 296, 174); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 378, 79); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 390, 105); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 332, 138); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 342, 181); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 404, 272); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 2); // i (h, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 2); // i (h, cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+// WARNING: HTimer (StateMonitor Timer) is taking 670ms to process. Increasing delay to 4000 ms.
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+selectCodeEditor("swervolf_core.v", 166, 315); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 287, 377); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 260, 323); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 238, 329); // ch (w, cr)
+// Elapsed time: 60 seconds
+selectCodeEditor("swervolf_core.v", 188, 167); // ch (w, cr)
+// Elapsed time: 30 seconds
+selectCodeEditor("swervolf_core.v", 310, 434); // ch (w, cr)
+// Elapsed time: 20 seconds
+selectCodeEditor("swervolf_core.v", 155, 188); // ch (w, cr)
+// Elapsed time: 26 seconds
+selectCodeEditor("swervolf_core.v", 212, 196); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 164, 203); // ch (w, cr)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "swervolf_core.v", 'v'); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 249, 216); // ch (w, cr)
+// Elapsed time: 14 seconds
+typeControlKey((HResource) null, "swervolf_core.v", 'v'); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 218, 241); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 244, 215); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 288, 206); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 122, 264); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 253, 219); // ch (w, cr)
+// Elapsed time: 25 seconds
+selectCodeEditor("swervolf_core.v", 255, 310); // ch (w, cr)
+// Elapsed time: 56 seconds
+selectCodeEditor("swervolf_core.v", 262, 409); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 262, 409); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 201, 416); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 531, 336); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 413, 430); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 412, 431); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 282, 489); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 231, 468); // ch (w, cr)
+// Elapsed time: 53 seconds
+selectCodeEditor("swervolf_core.v", 320, 555); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("swervolf_core.v", 225, 544); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 211, 134); // ch (w, cr)
+// Elapsed time: 35 seconds
+selectCodeEditor("swervolf_core.v", 216, 115); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 195, 151); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 235, 118); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("swervolf_core.v", 87, 113); // ch (w, cr)
+// Elapsed time: 49 seconds
+selectCodeEditor("swervolf_core.v", 191, 96); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 191, 96, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("swervolf_core.v", 356, 403); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 2); // i (h, cr)
+// Elapsed time: 48 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+selectCodeEditor("swervolf_core.v", 183, 170); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 79, 195); // ch (w, cr)
+typeControlKey((HResource) null, "swervolf_core.v", 'v'); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 147, 115); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 75, 157); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 149, 159); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 161, 178); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 254, 223); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 83, 176); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("swervolf_core.v", 12, 165); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 350, 230); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 316, 219); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 265, 365); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 234, 493); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 195, 464); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 194, 550); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 92, 422); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 237, 500, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("swervolf_core.v", 161, 404); // ch (w, cr)
+// Elapsed time: 43 seconds
+selectCodeEditor("swervolf_core.v", 320, 500); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("swervolf_core.v", 314, 379); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 54, 240); // ch (w, cr)
+typeControlKey((HResource) null, "swervolf_core.v", 'c'); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 139, 404); // ch (w, cr)
+typeControlKey((HResource) null, "swervolf_core.v", 'v'); // ch (w, cr)
+typeControlKey((HResource) null, "swervolf_core.v", 'v'); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 338, 465); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 327, 526); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,015 MB. GUI used memory: 92 MB. Current time: 11/16/22, 2:29:19 PM PST
+// Elapsed time: 83 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 2); // i (h, cr)
+selectCodeEditor("keyboard.v", 402, 297); // ch (w, cr)
+selectCodeEditor("keyboard.v", 402, 297); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectCodeEditor("keyboard.v", 176, 363); // ch (w, cr)
+selectCodeEditor("keyboard.v", 324, 225); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+selectCodeEditor("swervolf_core.v", 98, 408); // ch (w, cr)
+typeControlKey((HResource) null, "swervolf_core.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 2); // i (h, cr)
+selectCodeEditor("keyboard.v", 85, 366); // ch (w, cr)
+typeControlKey((HResource) null, "keyboard.v", 'v'); // ch (w, cr)
+selectCodeEditor("keyboard.v", 308, 440); // ch (w, cr)
+// Elapsed time: 98 seconds
+selectCodeEditor("keyboard.v", 46, 138); // ch (w, cr)
+selectCodeEditor("keyboard.v", 4, 108); // ch (w, cr)
+selectCodeEditor("keyboard.v", 598, 371); // ch (w, cr)
+selectCodeEditor("keyboard.v", 571, 472); // ch (w, cr)
+selectCodeEditor("keyboard.v", 91, 112); // ch (w, cr)
+selectCodeEditor("keyboard.v", 411, 460); // ch (w, cr)
+selectCodeEditor("keyboard.v", 152, 114); // ch (w, cr)
+selectCodeEditor("keyboard.v", 317, 350); // ch (w, cr)
+selectCodeEditor("keyboard.v", 470, 474); // ch (w, cr)
+selectCodeEditor("keyboard.v", 212, 269); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 2); // i (h, cr)
+// Elapsed time: 63 seconds
+selectCodeEditor("keyboard.v", 308, 298); // ch (w, cr)
+// Elapsed time: 81 seconds
+selectCodeEditor("keyboard.v", 189, 447); // ch (w, cr)
+// Elapsed time: 68 seconds
+selectCodeEditor("keyboard.v", 266, 202); // ch (w, cr)
+selectCodeEditor("keyboard.v", 267, 248); // ch (w, cr)
+selectCodeEditor("keyboard.v", 269, 340); // ch (w, cr)
+selectCodeEditor("keyboard.v", 199, 266); // ch (w, cr)
+selectCodeEditor("keyboard.v", 172, 241); // ch (w, cr)
+selectCodeEditor("keyboard.v", 742, 504); // ch (w, cr)
+// Elapsed time: 48 seconds
+selectCodeEditor("keyboard.v", 147, 520); // ch (w, cr)
+// Elapsed time: 26 seconds
+selectCodeEditor("keyboard.v", 132, 421); // ch (w, cr)
+typeControlKey((HResource) null, "keyboard.v", 'v'); // ch (w, cr)
+selectCodeEditor("keyboard.v", 420, 377); // ch (w, cr)
+selectCodeEditor("keyboard.v", 548, 304); // ch (w, cr)
+selectCodeEditor("keyboard.v", 490, 382); // ch (w, cr)
+selectCodeEditor("keyboard.v", 409, 322); // ch (w, cr)
+selectCodeEditor("keyboard.v", 317, 285); // ch (w, cr)
+selectCodeEditor("keyboard.v", 93, 282); // ch (w, cr)
+selectCodeEditor("keyboard.v", 93, 282, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("keyboard.v", 524, 414); // ch (w, cr)
+selectCodeEditor("keyboard.v", 508, 281); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("keyboard.v", 194, 422); // ch (w, cr)
+selectCodeEditor("keyboard.v", 383, 499); // ch (w, cr)
+selectCodeEditor("keyboard.v", 207, 418); // ch (w, cr)
+// Elapsed time: 85 seconds
+selectCodeEditor("keyboard.v", 189, 247); // ch (w, cr)
+selectCodeEditor("keyboard.v", 181, 267); // ch (w, cr)
+selectCodeEditor("keyboard.v", 607, 461); // ch (w, cr)
+selectCodeEditor("keyboard.v", 447, 460); // ch (w, cr)
+selectCodeEditor("keyboard.v", 177, 367); // ch (w, cr)
+selectCodeEditor("keyboard.v", 69, 361); // ch (w, cr)
+selectCodeEditor("keyboard.v", 72, 366); // ch (w, cr)
+selectCodeEditor("keyboard.v", 327, 495); // ch (w, cr)
+selectCodeEditor("keyboard.v", 157, 219); // ch (w, cr)
+// Elapsed time: 31 seconds
+selectCodeEditor("keyboard.v", 27, 182); // ch (w, cr)
+selectCodeEditor("keyboard.v", 27, 164); // ch (w, cr)
+selectCodeEditor("keyboard.v", 40, 225); // ch (w, cr)
+selectCodeEditor("keyboard.v", 49, 215); // ch (w, cr)
+selectCodeEditor("keyboard.v", 48, 234); // ch (w, cr)
+selectCodeEditor("keyboard.v", 68, 50); // ch (w, cr)
+selectCodeEditor("keyboard.v", 68, 39); // ch (w, cr)
+selectCodeEditor("keyboard.v", 123, 173); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("keyboard.v", 261, 64); // ch (w, cr)
+selectCodeEditor("keyboard.v", 294, 98); // ch (w, cr)
+selectCodeEditor("keyboard.v", 145, 262); // ch (w, cr)
+selectCodeEditor("keyboard.v", 54, 265); // ch (w, cr)
+selectCodeEditor("keyboard.v", 137, 291); // ch (w, cr)
+typeControlKey((HResource) null, "keyboard.v", 'c'); // ch (w, cr)
+selectCodeEditor("keyboard.v", 75, 263); // ch (w, cr)
+typeControlKey((HResource) null, "keyboard.v", 'v'); // ch (w, cr)
+selectCodeEditor("keyboard.v", 47, 263); // ch (w, cr)
+selectCodeEditor("keyboard.v", 110, 268); // ch (w, cr)
+selectCodeEditor("keyboard.v", 237, 301); // ch (w, cr)
+selectCodeEditor("keyboard.v", 455, 261); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+selectCodeEditor("swervolf_core.v", 394, 423); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 222, 534); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 127, 432); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 122, 287); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 146, 320); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 98, 227); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 2); // i (h, cr)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 2); // i (h, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("keyboard.v", 608, 85); // ch (w, cr)
+selectCodeEditor("keyboard.v", 519, 87); // ch (w, cr)
+selectCodeEditor("keyboard.v", 412, 79); // ch (w, cr)
+selectCodeEditor("keyboard.v", 577, 99); // ch (w, cr)
+// Elapsed time: 42 seconds
+selectCodeEditor("keyboard.v", 425, 98); // ch (w, cr)
+selectCodeEditor("keyboard.v", 476, 95); // ch (w, cr)
+selectCodeEditor("keyboard.v", 608, 88); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+selectCodeEditor("swervolf_core.v", 259, 563); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 286, 543); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 278, 488); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 265, 475); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 237, 436); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 209, 168); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 2); // i (h, cr)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 4); // i (h, cr)
+selectCodeEditor("swervolf_core.v", 465, 279); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("swervolf_core.v", 253, 143); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 284, 445); // ch (w, cr)
+// Elapsed time: 20 seconds
+selectCodeEditor("swervolf_core.v", 268, 504); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 268, 504); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 321, 466); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cr): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (cr)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 14 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Wed Nov 16 14:46:37 2022] Launched synth_1... Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 11 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Failed: addNotify
+// Elapsed time: 28 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-439] module 'PS2Receiver' not found [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/SweRVolfSoC/Peripherals/Keyboard/keyboard.v:27]. ]", 9, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-439] module 'PS2Receiver' not found [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/SweRVolfSoC/Peripherals/Keyboard/keyboard.v:27]. ]", 9, false, false, false, false, false, true); // ah (O, cr) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-439] module 'PS2Receiver' not found [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/SweRVolfSoC/Peripherals/Keyboard/keyboard.v:27]. ]", 9, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\raghv\OneDrive\Desktop\FPGA_Proj\Text_Editor_Final_Proj\RVfpga\src\SweRVolfSoC\Peripherals\Keyboard\keyboard.v;-;;-;16;-;line;-;27;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-439] module 'PS2Receiver' not found [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/SweRVolfSoC/Peripherals/Keyboard/keyboard.v:27]. ]", 9, false, false, false, false, false, true); // ah (O, cr) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+// Elapsed time: 19 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_DESIGN_RUNS, "Design Runs"); // aA
+// Elapsed time: 43 seconds
+selectCodeEditor("keyboard.v", 304, 67); // ch (w, cr)
+typeControlKey((HResource) null, "keyboard.v", 'c'); // ch (w, cr)
+selectCodeEditor("keyboard.v", 117, 135); // ch (w, cr)
+selectCodeEditor("keyboard.v", 2, 132); // ch (w, cr)
+typeControlKey((HResource) null, "keyboard.v", 'v'); // ch (w, cr)
+selectCodeEditor("keyboard.v", 469, 138); // ch (w, cr)
+selectCodeEditor("keyboard.v", 381, 184); // ch (w, cr)
+selectCodeEditor("keyboard.v", 420, 150); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// Tcl Message: launch_runs synth_1 -jobs 14 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Wed Nov 16 14:48:54 2022] Launched synth_1... Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Failed: addNotify
+// Elapsed time: 30 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-685] variable 'kdataf' should not be used in output port connection [C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/SweRVolfSoC/Peripherals/Keyboard/keyboard.v:63]. ]", 9, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\raghv\OneDrive\Desktop\FPGA_Proj\Text_Editor_Final_Proj\RVfpga\src\SweRVolfSoC\Peripherals\Keyboard\keyboard.v;-;;-;16;-;line;-;63;-;;-;16;-;"); // ah (O, cr)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+unMinimizeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // aA
+// Elapsed time: 24 seconds
+selectCodeEditor("keyboard.v", 340, 117); // ch (w, cr)
+selectCodeEditor("keyboard.v", 195, 118); // ch (w, cr)
+selectCodeEditor("keyboard.v", 159, 145); // ch (w, cr)
+selectCodeEditor("keyboard.v", 158, 162); // ch (w, cr)
+selectCodeEditor("keyboard.v", 111, 60); // ch (w, cr)
+selectCodeEditor("keyboard.v", 111, 87); // ch (w, cr)
+selectCodeEditor("keyboard.v", 110, 103); // ch (w, cr)
+selectCodeEditor("keyboard.v", 244, 75); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("keyboard.v", 227, 174); // ch (w, cr)
+// Elapsed time: 22 seconds
+selectCodeEditor("keyboard.v", 236, 139); // ch (w, cr)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+selectCodeEditor("keyboard.v", 158, 291); // ch (w, cr)
+selectCodeEditor("keyboard.v", 277, 297); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("keyboard.v", 78, 215); // ch (w, cr)
+selectCodeEditor("keyboard.v", 194, 329); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("keyboard.v", 371, 211); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// Tcl Message: launch_runs synth_1 -jobs 14 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov 16 14:52:14 2022] Launched synth_1... Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Failed: addNotify
+// Elapsed time: 26 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+// Elapsed time: 252 seconds
+selectCodeEditor("keyboard.v", 374, 141); // ch (w, cr)
+// Elapsed time: 23 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+// Elapsed time: 20 seconds
+selectCodeEditor("keyboard.v", 131, 235); // ch (w, cr)
+selectCodeEditor("keyboard.v", 197, 285); // ch (w, cr)
+// Elapsed time: 49 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // aA
+// Elapsed time: 23 seconds
+selectCodeEditor("keyboard.v", 130, 133); // ch (w, cr)
+selectCodeEditor("keyboard.v", 130, 133, false, false, false, false, true); // ch (w, cr) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,015 MB. GUI used memory: 79 MB. Current time: 11/16/22, 2:59:19 PM PST
+// Elapsed time: 37 seconds
+selectCodeEditor("keyboard.v", 97, 141); // ch (w, cr)
+selectCodeEditor("keyboard.v", 245, 206); // ch (w, cr)
+selectCodeEditor("keyboard.v", 186, 139); // ch (w, cr)
+selectCodeEditor("keyboard.v", 242, 138); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// Tcl Message: launch_runs synth_1 -jobs 14 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov 16 14:59:52 2022] Launched synth_1... Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Failed: addNotify
+// Elapsed time: 24 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+selectCodeEditor("keyboard.v", 64, 42); // ch (w, cr)
+// Elapsed time: 78 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P (aI, cr)
+// Elapsed time: 67 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // aA
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details. ]", 11, false); // ah (O, cr)
+// Elapsed time: 88 seconds
+selectCodeEditor("keyboard.v", 220, 114); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("keyboard.v", 137, 65); // ch (w, cr)
+selectCodeEditor("keyboard.v", 163, 93); // ch (w, cr)
+selectCodeEditor("keyboard.v", 476, 88); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// Tcl Message: launch_runs synth_1 -jobs 14 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov 16 15:04:56 2022] Launched synth_1... Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Failed: addNotify
+// Elapsed time: 24 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+selectCodeEditor("keyboard.v", 333, 105); // ch (w, cr)
+selectCodeEditor("keyboard.v", 96, 184); // ch (w, cr)
+// Elapsed time: 11 seconds
+floatFrame(PAResourceOtoP.PAViews_CODE, "keyboard.v"); // aA (aL, cr)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "keyboard.v"); // aA (aL, aN)
+selectCodeEditor("keyboard.v", 298, 271); // ch (w, aN)
+selectCodeEditor("keyboard.v", 247, 264); // ch (w, aN)
+selectCodeEditor("keyboard.v", 457, 337); // ch (w, aN)
+selectCodeEditor("keyboard.v", 457, 337); // ch (w, aN)
+selectCodeEditor("keyboard.v", 437, 337); // ch (w, aN)
+selectCodeEditor("keyboard.v", 124, 488); // ch (w, aN)
+selectCodeEditor("keyboard.v", 161, 490); // ch (w, aN)
+selectCodeEditor("keyboard.v", 342, 516); // ch (w, aN)
+selectCodeEditor("keyboard.v", 264, 336); // ch (w, aN)
+selectCodeEditor("keyboard.v", 248, 378); // ch (w, aN)
+selectCodeEditor("keyboard.v", 230, 217); // ch (w, aN)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 11 seconds
+selectCodeEditor("keyboard.v", 354, 96); // ch (w, aN)
+// Elapsed time: 97 seconds
+selectCodeEditor("keyboard.v", 841, 137); // ch (w, aN)
+selectCodeEditor("keyboard.v", 796, 101); // ch (w, aN)
+selectCodeEditor("keyboard.v", 796, 101); // ch (w, aN)
+selectCodeEditor("keyboard.v", 789, 186); // ch (w, aN)
+selectCodeEditor("keyboard.v", 799, 227); // ch (w, aN)
+selectCodeEditor("keyboard.v", 800, 279); // ch (w, aN)
+selectCodeEditor("keyboard.v", 810, 330); // ch (w, aN)
+selectCodeEditor("keyboard.v", 797, 348); // ch (w, aN)
+selectCodeEditor("keyboard.v", 798, 435); // ch (w, aN)
+selectCodeEditor("keyboard.v", 795, 406); // ch (w, aN)
+selectCodeEditor("keyboard.v", 789, 395); // ch (w, aN)
+// Elapsed time: 741 seconds
+selectCodeEditor("keyboard.v", 0, 311); // ch (w, aN)
+// Elapsed time: 21 seconds
+typeControlKey((HResource) null, "keyboard.v", 'v'); // ch (w, aN)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "keyboard.v", 'v'); // ch (w, aN)
+selectCodeEditor("keyboard.v", 316, 355); // ch (w, aN)
+selectCodeEditor("keyboard.v", 172, 327); // ch (w, aN)
+selectCodeEditor("keyboard.v", 59, 313); // ch (w, aN)
+// Elapsed time: 14 seconds
+selectCodeEditor("keyboard.v", 276, 406); // ch (w, aN)
+selectCodeEditor("keyboard.v", 270, 393); // ch (w, aN)
+selectCodeEditor("keyboard.v", 72, 390); // ch (w, aN)
+selectCodeEditor("keyboard.v", 616, 465); // ch (w, aN)
+selectCodeEditor("keyboard.v", 58, 395); // ch (w, aN)
+selectCodeEditor("keyboard.v", 275, 389); // ch (w, aN)
+selectCodeEditor("keyboard.v", 500, 640); // ch (w, aN)
+selectCodeEditor("keyboard.v", 49, 442); // ch (w, aN)
+selectCodeEditor("keyboard.v", 459, 522); // ch (w, aN)
+// Elapsed time: 28 seconds
+selectCodeEditor("keyboard.v", 22, 381); // ch (w, aN)
+selectCodeEditor("keyboard.v", 228, 448); // ch (w, aN)
+// Elapsed time: 41 seconds
+selectCodeEditor("keyboard.v", 394, 644); // ch (w, aN)
+selectCodeEditor("keyboard.v", 171, 630); // ch (w, aN)
+// Elapsed time: 33 seconds
+selectCodeEditor("keyboard.v", 101, 272); // ch (w, aN)
+selectCodeEditor("keyboard.v", 69, 271); // ch (w, aN)
+selectCodeEditor("keyboard.v", 162, 310); // ch (w, aN)
+// Elapsed time: 52 seconds
+selectCodeEditor("keyboard.v", 139, 539); // ch (w, aN)
+selectCodeEditor("keyboard.v", 229, 531); // ch (w, aN)
+selectCodeEditor("keyboard.v", 142, 534); // ch (w, aN)
+selectCodeEditor("keyboard.v", 288, 588); // ch (w, aN)
+// Elapsed time: 21 seconds
+selectCodeEditor("keyboard.v", 263, 565); // ch (w, aN)
+selectCodeEditor("keyboard.v", 271, 571); // ch (w, aN)
+selectCodeEditor("keyboard.v", 228, 564); // ch (w, aN)
+selectCodeEditor("keyboard.v", 203, 580); // ch (w, aN)
+// Elapsed time: 24 seconds
+selectCodeEditor("keyboard.v", 113, 159); // ch (w, aN)
+selectCodeEditor("keyboard.v", 202, 170); // ch (w, aN)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+unMaximizeFrame(PAResourceOtoP.PAViews_CODE, "keyboard.v"); // aA (aL, aN)
+dockFrame(PAResourceOtoP.PAViews_CODE, "keyboard.v"); // aA (aL, aN)
+// PAResourceOtoP.PAViews_CODE: Code: dock view
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 14 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov 16 15:26:45 2022] Launched synth_1... Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Failed: addNotify
+// Elapsed time: 24 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+// Elapsed time: 69 seconds
+floatFrame(PAResourceOtoP.PAViews_CODE, "keyboard.v"); // aA (aL, cr)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "keyboard.v"); // aA (aL, aN)
+// Elapsed time: 24 seconds
+selectCodeEditor("keyboard.v", 87, 188); // ch (w, aN)
+selectCodeEditor("keyboard.v", 223, 237); // ch (w, aN)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+dockFrame(PAResourceOtoP.PAViews_CODE, "keyboard.v"); // aA (aL, aN)
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "keyboard.v"); // aA (aL, aN)
+// PAResourceOtoP.PAViews_CODE: Code: dock view
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 14 
+// Tcl Message: [Wed Nov 16 15:28:57 2022] Launched synth_1... Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,015 MB. GUI used memory: 81 MB. Current time: 11/16/22, 3:29:20 PM PST
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Failed: addNotify
+// Elapsed time: 31 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 3); // i (h, cr)
+selectCodeEditor("swervolf_core.v", 286, 94); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 181, 130); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 283, 96); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 193, 38); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 4); // i (h, cr)
+selectCodeEditor("keyboard.v", 595, 93); // ch (w, cr)
+selectCodeEditor("keyboard.v", 226, 114); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("keyboard.v", 496, 144); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("keyboard.v", 88, 66); // ch (w, cr)
+selectCodeEditor("keyboard.v", 245, 100); // ch (w, cr)
+selectCodeEditor("keyboard.v", 305, 117); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// Tcl Message: launch_runs synth_1 -jobs 14 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov 16 15:31:01 2022] Launched synth_1... Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Failed: addNotify
+// Elapsed time: 34 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 3); // i (h, cr)
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 2); // i (h, cr)
+selectCodeEditor("rvfpganexys.sv", 199, 118); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 177, 190); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 265, 155); // ch (w, cr)
+selectCodeEditor("rvfpganexys.sv", 478, 159); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 3); // i (h, cr)
+selectCodeEditor("swervolf_core.v", 211, 133); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 289, 146); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 364, 122); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 14 
+// Tcl Message: [Wed Nov 16 15:32:56 2022] Launched synth_1... Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("swervolf_core.v", 513, 128); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 431, 51); // ch (w, cr)
+selectCodeEditor("swervolf_core.v", 429, 63); // ch (w, cr)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Failed: addNotify
+// Elapsed time: 16 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+// Elapsed time: 62 seconds
+selectCodeEditor("swervolf_core.v", 524, 118); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 2); // i (h, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("rvfpganexys.sv", 431, 142); // ch (w, cr)
+// Elapsed time: 23 seconds
+selectCodeEditor("rvfpganexys.sv", 511, 103); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 14 
+// Tcl Message: [Wed Nov 16 15:35:18 2022] Launched synth_1... Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Failed: addNotify
+// Elapsed time: 17 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // aj (cr)
+// Elapsed time: 19 seconds
+selectCodeEditor("rvfpganexys.sv", 298, 110); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// Tcl Message: launch_runs synth_1 -jobs 14 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov 16 15:36:04 2022] Launched synth_1... Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Completed: addNotify
+// Elapsed time: 901 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 14 
+// Tcl Message: [Wed Nov 16 15:51:09 2022] Launched impl_1... Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,015 MB. GUI used memory: 83 MB. Current time: 11/16/22, 3:59:22 PM PST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Completed: addNotify
+// Elapsed time: 906 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Implementation Completed"); // aj (cr)
+// Elapsed time: 519 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 4); // i (h, cr)
+selectCodeEditor("keyboard.v", 147, 114); // ch (w, cr)
+typeControlKey((HResource) null, "keyboard.v", 'v'); // ch (w, cr)
+selectCodeEditor("keyboard.v", 149, 114); // ch (w, cr)
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "keyboard.v", 'v'); // ch (w, cr)
+selectCodeEditor("keyboard.v", 198, 139); // ch (w, cr)
+selectCodeEditor("keyboard.v", 173, 126); // ch (w, cr)
+selectCodeEditor("keyboard.v", 148, 129); // ch (w, cr)
+selectCodeEditor("keyboard.v", 73, 111); // ch (w, cr)
+selectCodeEditor("keyboard.v", 105, 187); // ch (w, cr)
+selectCodeEditor("keyboard.v", 228, 207); // ch (w, cr)
+selectCodeEditor("keyboard.v", 249, 163); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("keyboard.v", 135, 146); // ch (w, cr)
+selectCodeEditor("keyboard.v", 135, 146, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("keyboard.v", 502, 138); // ch (w, cr)
+selectCodeEditor("keyboard.v", 528, 138); // ch (w, cr)
+selectCodeEditor("keyboard.v", 779, 185); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.xdc", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rvfpganexys.sv", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swervolf_core.v", 3); // i (h, cr)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 14 
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov 16 16:16:32 2022] Launched synth_1... Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/synth_1/runme.log [Wed Nov 16 16:16:32 2022] Launched impl_1... Run output will be captured here: C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 701 seconds
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Implementation", 1); // i (A, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,015 MB. GUI used memory: 85 MB. Current time: 11/16/22, 4:29:24 PM PST
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 692 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
