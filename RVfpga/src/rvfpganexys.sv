@@ -62,9 +62,9 @@ module rvfpganexys
     output wire [3:0]   VGA_G,
     output wire [3:0]   VGA_B,
     output wire         VGA_HS,
-    output wire         VGA_VS, 
+    output wire         VGA_VS,
     input wire PS2_CLK,
-    input wire PS2_DATA
+    input wire PS2_DATA 
     );
 
    wire [15:0] 	       gpio_out;
@@ -186,6 +186,8 @@ module rvfpganexys
    wire [31:0] dmi_reg_rdata;
    wire        dmi_hard_reset;
    wire        flash_sclk;
+   wire        UART_TXD;
+   wire        UART_EN;
 
    STARTUPE2 STARTUPE2
      (
@@ -294,7 +296,7 @@ module rvfpganexys
       .vga_b        (VGA_B),
       .vga_vs       (VGA_VS), 
       .vga_hs       (VGA_HS),
-      .clk_vga      (clk_31_5),
+      .clk_vga          (clk_31_5),
       .PS2_CLK(PS2_CLK),
       .PS2_DATA(PS2_DATA)
 );
@@ -303,6 +305,6 @@ module rvfpganexys
       o_led[15:0] <= gpio_out[15:0];
    end
 
-   assign o_uart_tx = 1'b0 ? litedram_tx : cpu_tx;
+   assign o_uart_tx = 1'b0 ? litedram_tx  : cpu_tx;
 
 endmodule

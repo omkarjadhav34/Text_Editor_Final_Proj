@@ -1,14 +1,16 @@
 module vga(
 // VGA Inputs
 input wire reset,
-input wire [15:0] switches,
+input wire [31:0] keycode,
 // VGA Outputs
 input wire vga_clk,
 output reg [3:0] vga_r,
 output reg [3:0] vga_g,
 output reg [3:0] vga_b,
 output wire vga_vs,
-output wire vga_hs
+output wire vga_hs,
+input wire flag,
+input wire clk
 );
 
 reg [3:0] row_width;

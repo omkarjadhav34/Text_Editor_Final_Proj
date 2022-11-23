@@ -38,7 +38,14 @@ module rvfpgasim
    input wire BTNU,
    input wire BTNL,
    input wire BTNR,
-   input wire BTND
+   input wire BTND,
+    output wire [3:0]   VGA_R,
+    output wire [3:0]   VGA_G,
+    output wire [3:0]   VGA_B,
+    output wire         VGA_HS,
+    output wire         VGA_VS,
+    input wire PS2_CLK,
+    input wire PS2_DATA
    )
 `endif
   ;
@@ -257,6 +264,13 @@ module rvfpgasim
       .BTNU                (BTNU),
       .BTNL                (BTNL),
       .BTNR                (BTNR),
-      .BTND                (BTND));
+      .BTND                (BTND),
+      .vga_r        (VGA_R), 
+      .vga_g        (VGA_G), 
+      .vga_b        (VGA_B),
+      .vga_vs       (VGA_VS), 
+      .vga_hs       (VGA_HS),
+      .PS2_CLK(PS2_CLK),
+      .PS2_DATA(PS2_DATA));
 
 endmodule

@@ -95,11 +95,8 @@ module swervolf_core
     output wire [3:0]   vga_b,
     output wire         vga_hs,
     output wire         vga_vs,
-    ////////
-    
     input  wire PS2_CLK,
     input  wire  PS2_DATA
-    
     );
 
    localparam BOOTROM_SIZE = 32'h1000;
@@ -307,6 +304,7 @@ module swervolf_core
 
       // Inputs
       .srx_pad_i (i_uart_rx),
+    //  .srx_pad_i (UART_TXD),
       .cts_pad_i (1'b0),
       .dsr_pad_i (1'b0),
       .ri_pad_i  (1'b0),
@@ -370,9 +368,7 @@ module swervolf_core
         .ext_padoe_o   (en_gpio));
  /*    
    wire [11:0] spr_row, spr_col;   
-   */
-
-
+   
    keyboard_top keyboard_module(
         .wb_clk_i     (clk), 
         .wb_rst_i     (wb_rst), 
@@ -384,27 +380,55 @@ module swervolf_core
         .wb_stb_i     (wb_m2s_keyboard_stb), 
         .wb_dat_o     (wb_s2m_keyboard_dat),
         .wb_ack_o     (wb_s2m_keyboard_ack), 
-        .wb_err_o     (wb_s2m_keyboard_err),
+        .wb_err_o     (wb_s2m_keyboard_err)
+        // External pushbttn Interface
+        
+        .pb_data_i    ({BTNC,BTNU,BTNL,BTNR,BTND}),
+        .pointerRow   (spr_row),
+        .pointerColumn (spr_col)
+        
+        );
+      */
+        wire [31:0] keycode;
+        wire flag;
+         keyboard_top keyboard_module(
+        .clk     (clk), 
         // External pushbttn Interface
         ////////// write top signals here
         .PS2_CLK(PS2_CLK),
-        .PS2_DATA(PS2_DATA)
+        .PS2_DATA(PS2_DATA),
+        
+        .wb_rst_i     (wb_rst), 
+        .wb_cyc_i     (wb_m2s_keyboard_cyc), 
+        .wb_adr_i     ({2'b0,wb_m2s_keyboard_adr[5:2],2'b0}), 
+        .wb_dat_i     (wb_m2s_keyboard_dat), 
+        .wb_sel_i     (4'b1111),
+        .wb_we_i      (wb_m2s_keyboard_we), 
+        .wb_stb_i     (wb_m2s_keyboard_stb), 
+        .wb_dat_o     (wb_s2m_keyboard_dat),
+        .wb_ack_o     (wb_s2m_keyboard_ack), 
+        .wb_err_o     (wb_s2m_keyboard_err),
+        .keycode      (keycode),
+        .check(flag)
         );
-      
+        
    // VGA
+   
     vga vga(
         // control inputs
         .reset(1'b0),    //active high reset
-        .switches(i_gpio[31:16]),                  //active high test mode enable
-    	
+                          //active high test mode enable
+    	.keycode(keycode),
         // VGA clock and outputs
         .vga_clk(clk_vga), //31.5MHz for 640x480
         .vga_r(vga_r), 
         .vga_g(vga_g), 
         .vga_b(vga_b),
         .vga_vs(vga_vs), 
-        .vga_hs(vga_hs)
+        .vga_hs(vga_hs),
+        .flag(flag)
     );
+    
 
    // PTC
    wire        ptc_irq;
