@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Wed Nov 23 01:56:37 2022
+| Date         : Wed Nov 23 13:47:52 2022
 | Host         : Omkar running 64-bit major release  (build 9200)
 | Command      : report_utilization -file rvfpganexys_utilization_synth.rpt -pb rvfpganexys_utilization_synth.pb
 | Design       : rvfpganexys
@@ -30,8 +30,8 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 35578 |     0 |     63400 | 56.12 |
-|   LUT as Logic             | 35283 |     0 |     63400 | 55.65 |
+| Slice LUTs*                | 35585 |     0 |     63400 | 56.13 |
+|   LUT as Logic             | 35290 |     0 |     63400 | 55.66 |
 |   LUT as Memory            |   295 |     0 |     19000 |  1.55 |
 |     LUT as Distributed RAM |   292 |     0 |           |       |
 |     LUT as Shift Register  |     3 |     0 |           |       |
@@ -154,13 +154,13 @@ Table of Contents
 +------------+-------+---------------------+
 |  Ref Name  |  Used | Functional Category |
 +------------+-------+---------------------+
-| LUT6       | 18592 |                 LUT |
+| LUT6       | 18598 |                 LUT |
 | FDCE       | 15763 |        Flop & Latch |
 | LUT5       |  7818 |                 LUT |
-| LUT4       |  5941 |                 LUT |
+| LUT4       |  5942 |                 LUT |
 | LUT3       |  4861 |                 LUT |
 | FDRE       |  3757 |        Flop & Latch |
-| LUT2       |  2265 |                 LUT |
+| LUT2       |  2266 |                 LUT |
 | CARRY4     |   846 |          CarryLogic |
 | LUT1       |   492 |                 LUT |
 | MUXF7      |   484 |               MuxFx |

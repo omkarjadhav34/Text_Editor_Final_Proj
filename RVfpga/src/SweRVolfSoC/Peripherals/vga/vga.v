@@ -49,7 +49,7 @@ dtg dtg(
   
 initial
 begin
-    s_row       = 12'd160;                  // s_row + row_width -> max vertical area of displaying text
+    s_row       = 12'd40;                  // s_row + row_width -> max vertical area of displaying text
     s_col       = 12'd80;                   // s_col + col_width -> max horizontal area of displaying text
     col_width   = 4'd8;
     row_width   = 4'd8;
@@ -57,7 +57,7 @@ begin
 
     for (i = 0; i < 70; i = i + 1)          // Initally display 0  for first row 
     begin
-        if (i < 20)
+        if (i < 10)
             data_buffer[0][i] = 8'h45;
         else
             data_buffer[0][i] = 8'hff;
