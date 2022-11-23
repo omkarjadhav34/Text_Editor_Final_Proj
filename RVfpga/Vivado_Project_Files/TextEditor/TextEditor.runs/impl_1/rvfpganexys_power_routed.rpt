@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Wed Nov 23 00:34:09 2022
-| Host             : Raghvendra running 64-bit major release  (build 9200)
+| Date             : Wed Nov 23 02:03:54 2022
+| Host             : Omkar running 64-bit major release  (build 9200)
 | Command          : report_power -file rvfpganexys_power_routed.rpt -pb rvfpganexys_power_summary_routed.pb -rpx rvfpganexys_power_routed.rpx
 | Design           : rvfpganexys
 | Device           : xc7a100tcsg324-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.053        |
+| Total On-Chip Power (W)  | 1.057        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.943        |
+| Dynamic (W)              | 0.947        |
 | Device Static (W)        | 0.110        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 80.2         |
@@ -52,24 +52,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.043 |       16 |       --- |             --- |
-| Slice Logic              |     0.018 |    61598 |       --- |             --- |
-|   LUT as Logic           |     0.016 |    34078 |     63400 |           53.75 |
+| Clocks                   |     0.042 |       16 |       --- |             --- |
+| Slice Logic              |     0.020 |    62839 |       --- |             --- |
+|   LUT as Logic           |     0.018 |    34665 |     63400 |           54.68 |
 |   LUT as Distributed RAM |    <0.001 |      292 |     19000 |            1.54 |
 |   CARRY4                 |    <0.001 |      846 |     15850 |            5.34 |
-|   Register               |    <0.001 |    19227 |    126800 |           15.16 |
+|   Register               |    <0.001 |    19796 |    126800 |           15.61 |
 |   F7/F8 Muxes            |    <0.001 |      516 |     63400 |            0.81 |
-|   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
+|   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
 |   LUT as Shift Register  |    <0.001 |        3 |     19000 |            0.02 |
-|   Others                 |     0.000 |     1201 |       --- |             --- |
-| Signals                  |     0.026 |    50467 |       --- |             --- |
+|   Others                 |     0.000 |     1202 |       --- |             --- |
+| Signals                  |     0.029 |    51698 |       --- |             --- |
 | Block RAM                |     0.068 |       44 |       135 |           32.59 |
 | MMCM                     |     0.120 |        1 |         6 |           16.67 |
 | PLL                      |     0.278 |        2 |         6 |           33.33 |
-| DSPs                     |    <0.001 |        4 |       240 |            1.67 |
+| DSPs                     |     0.000 |        4 |       240 |            1.67 |
 | I/O                      |     0.390 |      120 |       210 |           57.14 |
 | Static Power             |     0.110 |          |           |                 |
-| Total                    |     1.053 |          |           |                 |
+| Total                    |     1.057 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,7 +79,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.200 |       0.180 |      0.019 |
+| Vccint    |       1.000 |     0.204 |       0.185 |      0.019 |
 | Vccaux    |       1.800 |     0.263 |       0.245 |      0.018 |
 | Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -161,13 +161,13 @@ Table of Contents
 +-------------------------+-----------+
 | Name                    | Power (W) |
 +-------------------------+-----------+
-| rvfpganexys             |     0.943 |
-|   cdc                   |     0.007 |
-|     i_axi_cdc           |     0.007 |
-|       i_cdc_fifo_gray_r |     0.005 |
+| rvfpganexys             |     0.947 |
+|   cdc                   |     0.008 |
+|     i_axi_cdc           |     0.008 |
+|       i_cdc_fifo_gray_r |     0.006 |
 |   clk_gen               |     0.146 |
-|   ddr2                  |     0.397 |
-|     ldc                 |     0.397 |
+|   ddr2                  |     0.396 |
+|     ldc                 |     0.396 |
 |       IOBUF             |     0.008 |
 |       IOBUFDS           |     0.007 |
 |       IOBUFDS_1         |     0.007 |
@@ -188,17 +188,18 @@ Table of Contents
 |       IOBUF_9           |     0.008 |
 |       OBUFDS            |     0.008 |
 |       serv_rf_top       |     0.004 |
-|   swervolf              |     0.092 |
+|   swervolf              |     0.096 |
 |     axi2wb              |     0.002 |
 |     axi_intercon        |     0.003 |
 |       axi_xbar          |     0.003 |
-|     bootrom             |     0.002 |
-|       ram               |     0.002 |
-|     swerv_eh1           |     0.079 |
+|     bootrom             |     0.003 |
+|       ram               |     0.003 |
+|     swerv_eh1           |     0.078 |
 |       mem               |     0.045 |
-|       swerv             |     0.034 |
+|       swerv             |     0.033 |
 |     syscon              |     0.001 |
-|     timer_ptc           |     0.002 |
+|     timer_ptc           |     0.001 |
+|     vga                 |     0.006 |
 |   vga_clk               |     0.120 |
 |     inst                |     0.120 |
 +-------------------------+-----------+

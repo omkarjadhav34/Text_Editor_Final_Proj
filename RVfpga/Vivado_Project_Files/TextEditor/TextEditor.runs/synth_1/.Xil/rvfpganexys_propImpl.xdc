@@ -1,5 +1,5 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/rvfpganexys.xdc rfile:../../../../../src/rvfpganexys.xdc id:1} [current_design]
-set_property SRC_FILE_INFO {cfile:C:/Users/raghv/OneDrive/Desktop/FPGA_Proj/Text_Editor_Final_Proj/RVfpga/src/LiteDRAM/liteDRAM.xdc rfile:../../../../../src/LiteDRAM/liteDRAM.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/jadha/OneDrive/Desktop/FPGA_Proj/Text_Editor/Text_Editor_Final_Proj/RVfpga/src/rvfpganexys.xdc rfile:../../../../../src/rvfpganexys.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/jadha/OneDrive/Desktop/FPGA_Proj/Text_Editor/Text_Editor_Final_Proj/RVfpga/src/LiteDRAM/liteDRAM.xdc rfile:../../../../../src/LiteDRAM/liteDRAM.xdc id:2} [current_design]
 set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN A3    IOSTANDARD LVCMOS33 } [get_ports { VGA_R[0] }]; #IO_L8N_T1_AD14N_35 Sch=vga_r[0]
 set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]

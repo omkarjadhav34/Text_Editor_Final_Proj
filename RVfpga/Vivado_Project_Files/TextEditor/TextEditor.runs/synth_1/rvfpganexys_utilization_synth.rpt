@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Wed Nov 23 00:21:44 2022
-| Host         : Raghvendra running 64-bit major release  (build 9200)
+| Date         : Wed Nov 23 01:56:37 2022
+| Host         : Omkar running 64-bit major release  (build 9200)
 | Command      : report_utilization -file rvfpganexys_utilization_synth.rpt -pb rvfpganexys_utilization_synth.pb
 | Design       : rvfpganexys
 | Device       : 7a100tcsg324-1
@@ -30,13 +30,13 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 34969 |     0 |     63400 | 55.16 |
-|   LUT as Logic             | 34674 |     0 |     63400 | 54.69 |
+| Slice LUTs*                | 35578 |     0 |     63400 | 56.12 |
+|   LUT as Logic             | 35283 |     0 |     63400 | 55.65 |
 |   LUT as Memory            |   295 |     0 |     19000 |  1.55 |
 |     LUT as Distributed RAM |   292 |     0 |           |       |
 |     LUT as Shift Register  |     3 |     0 |           |       |
-| Slice Registers            | 19215 |     0 |    126800 | 15.15 |
-|   Register as Flip Flop    | 19215 |     0 |    126800 | 15.15 |
+| Slice Registers            | 19784 |     0 |    126800 | 15.60 |
+|   Register as Flip Flop    | 19784 |     0 |    126800 | 15.60 |
 |   Register as Latch        |     0 |     0 |    126800 |  0.00 |
 | F7 Muxes                   |   484 |     0 |     31700 |  1.53 |
 | F8 Muxes                   |    32 |     0 |     15850 |  0.20 |
@@ -59,7 +59,7 @@ Table of Contents
 | 49    |          Yes |           - |          Set |
 | 15763 |          Yes |           - |        Reset |
 | 215   |          Yes |         Set |            - |
-| 3188  |          Yes |       Reset |            - |
+| 3757  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -120,7 +120,7 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 |  Site Type | Used | Fixed | Available | Util% |
 +------------+------+-------+-----------+-------+
-| BUFGCTRL   |   11 |     0 |        32 | 34.38 |
+| BUFGCTRL   |   12 |     0 |        32 | 37.50 |
 | BUFIO      |    0 |     0 |        24 |  0.00 |
 | MMCME2_ADV |    0 |     0 |         6 |  0.00 |
 | PLLE2_ADV  |    2 |     0 |         6 | 33.33 |
@@ -154,13 +154,13 @@ Table of Contents
 +------------+-------+---------------------+
 |  Ref Name  |  Used | Functional Category |
 +------------+-------+---------------------+
-| LUT6       | 18222 |                 LUT |
+| LUT6       | 18592 |                 LUT |
 | FDCE       | 15763 |        Flop & Latch |
-| LUT5       |  7644 |                 LUT |
-| LUT4       |  5896 |                 LUT |
-| LUT3       |  4798 |                 LUT |
-| FDRE       |  3188 |        Flop & Latch |
-| LUT2       |  2247 |                 LUT |
+| LUT5       |  7818 |                 LUT |
+| LUT4       |  5941 |                 LUT |
+| LUT3       |  4861 |                 LUT |
+| FDRE       |  3757 |        Flop & Latch |
+| LUT2       |  2265 |                 LUT |
 | CARRY4     |   846 |          CarryLogic |
 | LUT1       |   492 |                 LUT |
 | MUXF7      |   484 |               MuxFx |
@@ -177,7 +177,7 @@ Table of Contents
 | RAMB36E1   |    29 |        Block Memory |
 | ISERDESE2  |    16 |                  IO |
 | IDELAYE2   |    16 |                  IO |
-| BUFG       |    11 |               Clock |
+| BUFG       |    12 |               Clock |
 | OBUFTDS    |     4 |                  IO |
 | DSP48E1    |     4 |    Block Arithmetic |
 | SRL16E     |     3 |  Distributed Memory |
