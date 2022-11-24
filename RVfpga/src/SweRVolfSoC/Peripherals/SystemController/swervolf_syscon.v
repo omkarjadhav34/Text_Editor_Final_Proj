@@ -293,7 +293,7 @@ module swervolf_syscon
 
 endmodule
 
-parameter COUNT_MAX = 5;
+parameter COUNT_MAX = 20;
 
 module SevSegDisplays_Controller(
                      input wire           clk,

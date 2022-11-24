@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Wed Nov 23 13:54:09 2022
-| Host             : Omkar running 64-bit major release  (build 9200)
+| Date             : Wed Nov 23 14:29:47 2022
+| Host             : SakshiLenovo running 64-bit major release  (build 9200)
 | Command          : report_power -file rvfpganexys_power_routed.rpt -pb rvfpganexys_power_summary_routed.pb -rpx rvfpganexys_power_routed.rpx
 | Design           : rvfpganexys
 | Device           : xc7a100tcsg324-1
@@ -52,17 +52,17 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.044 |       16 |       --- |             --- |
-| Slice Logic              |     0.020 |    62847 |       --- |             --- |
-|   LUT as Logic           |     0.019 |    34683 |     63400 |           54.71 |
+| Clocks                   |     0.043 |       16 |       --- |             --- |
+| Slice Logic              |     0.020 |    62864 |       --- |             --- |
+|   LUT as Logic           |     0.019 |    34709 |     63400 |           54.75 |
 |   LUT as Distributed RAM |    <0.001 |      292 |     19000 |            1.54 |
-|   CARRY4                 |    <0.001 |      846 |     15850 |            5.34 |
-|   Register               |    <0.001 |    19796 |    126800 |           15.61 |
+|   CARRY4                 |    <0.001 |      851 |     15850 |            5.37 |
+|   Register               |    <0.001 |    19811 |    126800 |           15.62 |
 |   F7/F8 Muxes            |    <0.001 |      516 |     63400 |            0.81 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
 |   LUT as Shift Register  |    <0.001 |        3 |     19000 |            0.02 |
-|   Others                 |     0.000 |     1202 |       --- |             --- |
-| Signals                  |     0.028 |    51697 |       --- |             --- |
+|   Others                 |     0.000 |     1203 |       --- |             --- |
+| Signals                  |     0.029 |    51718 |       --- |             --- |
 | Block RAM                |     0.068 |       44 |       135 |           32.59 |
 | MMCM                     |     0.120 |        1 |         6 |           16.67 |
 | PLL                      |     0.278 |        2 |         6 |           33.33 |
@@ -79,7 +79,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.205 |       0.185 |      0.019 |
+| Vccint    |       1.000 |     0.205 |       0.186 |      0.019 |
 | Vccaux    |       1.800 |     0.263 |       0.245 |      0.018 |
 | Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -164,10 +164,10 @@ Table of Contents
 | rvfpganexys             |     0.948 |
 |   cdc                   |     0.007 |
 |     i_axi_cdc           |     0.007 |
-|       i_cdc_fifo_gray_r |     0.005 |
+|       i_cdc_fifo_gray_r |     0.006 |
 |   clk_gen               |     0.146 |
-|   ddr2                  |     0.397 |
-|     ldc                 |     0.397 |
+|   ddr2                  |     0.396 |
+|     ldc                 |     0.396 |
 |       IOBUF             |     0.008 |
 |       IOBUFDS           |     0.007 |
 |       IOBUFDS_1         |     0.007 |
@@ -188,7 +188,7 @@ Table of Contents
 |       IOBUF_9           |     0.008 |
 |       OBUFDS            |     0.008 |
 |       serv_rf_top       |     0.004 |
-|   swervolf              |     0.097 |
+|   swervolf              |     0.098 |
 |     axi2wb              |     0.002 |
 |     axi_intercon        |     0.003 |
 |       axi_xbar          |     0.003 |

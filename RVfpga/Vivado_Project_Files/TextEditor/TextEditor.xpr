@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/jadha/OneDrive/Desktop/FPGA_Proj/Text_Editor/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.xpr">
+<Project Version="7" Minor="44" Path="C:/Users/saksh/OneDrive/Desktop/FPGA_Project/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="ea86cb5118ef40129b8309a2e92ec9b5"/>
