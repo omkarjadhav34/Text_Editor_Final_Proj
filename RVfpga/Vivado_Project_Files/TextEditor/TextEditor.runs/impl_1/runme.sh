@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/saksh/OneDrive/Desktop/FPGA_Project/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/impl_1'
+HD_PWD='C:/Users/jadha/OneDrive/Desktop/FPGA_Proj/Text_Editor/Text_Editor_Final_Proj/RVfpga/Vivado_Project_Files/TextEditor/TextEditor.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

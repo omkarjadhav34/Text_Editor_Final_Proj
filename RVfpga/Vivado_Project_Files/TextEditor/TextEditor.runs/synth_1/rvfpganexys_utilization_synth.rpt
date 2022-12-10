@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Wed Nov 23 14:21:38 2022
-| Host         : SakshiLenovo running 64-bit major release  (build 9200)
+| Date         : Fri Dec  9 18:31:06 2022
+| Host         : Omkar running 64-bit major release  (build 9200)
 | Command      : report_utilization -file rvfpganexys_utilization_synth.rpt -pb rvfpganexys_utilization_synth.pb
 | Design       : rvfpganexys
 | Device       : 7a100tcsg324-1
@@ -30,16 +30,16 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 35583 |     0 |     63400 | 56.12 |
-|   LUT as Logic             | 35288 |     0 |     63400 | 55.66 |
-|   LUT as Memory            |   295 |     0 |     19000 |  1.55 |
-|     LUT as Distributed RAM |   292 |     0 |           |       |
+| Slice LUTs*                | 55403 |     0 |     63400 | 87.39 |
+|   LUT as Logic             | 55092 |     0 |     63400 | 86.90 |
+|   LUT as Memory            |   311 |     0 |     19000 |  1.64 |
+|     LUT as Distributed RAM |   308 |     0 |           |       |
 |     LUT as Shift Register  |     3 |     0 |           |       |
-| Slice Registers            | 19799 |     0 |    126800 | 15.61 |
-|   Register as Flip Flop    | 19799 |     0 |    126800 | 15.61 |
+| Slice Registers            | 45583 |     0 |    126800 | 35.95 |
+|   Register as Flip Flop    | 45583 |     0 |    126800 | 35.95 |
 |   Register as Latch        |     0 |     0 |    126800 |  0.00 |
-| F7 Muxes                   |   484 |     0 |     31700 |  1.53 |
-| F8 Muxes                   |    32 |     0 |     15850 |  0.20 |
+| F7 Muxes                   |  3681 |     0 |     31700 | 11.61 |
+| F8 Muxes                   |  1272 |     0 |     15850 |  8.03 |
 +----------------------------+-------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
@@ -59,7 +59,7 @@ Table of Contents
 | 49    |          Yes |           - |          Set |
 | 15778 |          Yes |           - |        Reset |
 | 215   |          Yes |         Set |            - |
-| 3757  |          Yes |       Reset |            - |
+| 29541 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -154,16 +154,17 @@ Table of Contents
 +------------+-------+---------------------+
 |  Ref Name  |  Used | Functional Category |
 +------------+-------+---------------------+
-| LUT6       | 18598 |                 LUT |
+| LUT6       | 30934 |                 LUT |
+| FDRE       | 29541 |        Flop & Latch |
 | FDCE       | 15778 |        Flop & Latch |
-| LUT5       |  7817 |                 LUT |
-| LUT4       |  5941 |                 LUT |
-| LUT3       |  4860 |                 LUT |
-| FDRE       |  3757 |        Flop & Latch |
-| LUT2       |  2265 |                 LUT |
-| CARRY4     |   851 |          CarryLogic |
-| LUT1       |   492 |                 LUT |
-| MUXF7      |   484 |               MuxFx |
+| LUT5       | 11061 |                 LUT |
+| LUT4       | 10837 |                 LUT |
+| LUT3       |  6004 |                 LUT |
+| MUXF7      |  3681 |               MuxFx |
+| LUT2       |  3528 |                 LUT |
+| MUXF8      |  1272 |               MuxFx |
+| CARRY4     |   866 |          CarryLogic |
+| LUT1       |   554 |                 LUT |
 | RAMD32     |   438 |  Distributed Memory |
 | FDSE       |   215 |        Flop & Latch |
 | RAMS32     |   146 |  Distributed Memory |
@@ -172,9 +173,9 @@ Table of Contents
 | OSERDESE2  |    44 |                  IO |
 | IBUF       |    39 |                  IO |
 | OBUFT      |    32 |                  IO |
-| MUXF8      |    32 |               MuxFx |
 | RAMB18E1   |    30 |        Block Memory |
 | RAMB36E1   |    29 |        Block Memory |
+| RAMD64E    |    16 |  Distributed Memory |
 | ISERDESE2  |    16 |                  IO |
 | IDELAYE2   |    16 |                  IO |
 | BUFG       |    12 |               Clock |

@@ -135,6 +135,7 @@ int main(int argc, char **argv, char **env)
 
   top->clk = 1;
   top->rst = 1;
+top->PS2_CLK = 1;
 
   top->BTNC = 0;
   top->BTNU = 0;
@@ -180,6 +181,9 @@ int main(int argc, char **argv, char **env)
       done = true;
     }
     top->clk = !top->clk;
+    if(main_time % 500)
+    top->PS2_CLK = !top->PS2_CLK;
+
     main_time+=10;
 
     if(main_time == 30000)
@@ -189,42 +193,159 @@ int main(int argc, char **argv, char **env)
         top->BTNL = 0;
         top->BTNR = 0;
         top->BTND = 0;
+	  top->PS2_DATA = 1;
         printf("Testcase1\n");
     }
-    if(main_time == 30100)
+    if(main_time == 32000)
     {
         top->BTNC = 0;
         top->BTNU = 1;
         top->BTNL = 0;
         top->BTNR = 0;
         top->BTND = 0;
+
+	  top->PS2_DATA = 0;
         printf("Testcase2\n");
     }
-    if(main_time == 30200)
+    if(main_time == 34000)
     {
         top->BTNC = 0;
         top->BTNU = 0;
         top->BTNL = 1;
         top->BTNR = 0;
         top->BTND = 0;
+
+	  top->PS2_DATA = 1;
         printf("Testcase3\n");
     }
-    if(main_time == 30300)
+    if(main_time == 36000)
     {
         top->BTNC = 0;
         top->BTNU = 0;
         top->BTNL = 0;
         top->BTNR = 1;
         top->BTND = 0;
+
+	  top->PS2_DATA = 0;
         printf("Testcase4\n");
     }
-    if(main_time == 30400)
+    if(main_time == 38000)
     {
         top->BTNC = 0;
         top->BTNU = 0;
         top->BTNL = 0;
         top->BTNR = 0;
         top->BTND = 1;
+
+	  top->PS2_DATA = 0;
+        printf("Testcase5\n");
+    }
+    if(main_time == 40000)
+    {
+        top->BTNC = 1;
+        top->BTNU = 0;
+        top->BTNL = 0;
+        top->BTNR = 0;
+        top->BTND = 0;
+	  top->PS2_DATA = 1;
+        printf("Testcase1\n");
+    }
+    if(main_time == 42000)
+    {
+        top->BTNC = 0;
+        top->BTNU = 1;
+        top->BTNL = 0;
+        top->BTNR = 0;
+        top->BTND = 0;
+
+	  top->PS2_DATA = 0;
+        printf("Testcase2\n");
+    }
+    if(main_time == 44000)
+    {
+        top->BTNC = 0;
+        top->BTNU = 0;
+        top->BTNL = 1;
+        top->BTNR = 0;
+        top->BTND = 0;
+
+	  top->PS2_DATA = 1;
+        printf("Testcase3\n");
+    }
+    if(main_time == 46000)
+    {
+        top->BTNC = 0;
+        top->BTNU = 0;
+        top->BTNL = 0;
+        top->BTNR = 1;
+        top->BTND = 0;
+
+	  top->PS2_DATA = 0;
+        printf("Testcase4\n");
+    }
+    if(main_time == 48000)
+    {
+        top->BTNC = 0;
+        top->BTNU = 0;
+        top->BTNL = 0;
+        top->BTNR = 0;
+        top->BTND = 1;
+
+	  top->PS2_DATA = 0;
+        printf("Testcase5\n");
+    }
+    if(main_time == 50000)
+    {
+        top->BTNC = 1;
+        top->BTNU = 0;
+        top->BTNL = 0;
+        top->BTNR = 0;
+        top->BTND = 0;
+	  top->PS2_DATA = 1;
+        printf("Testcase1\n");
+    }
+    if(main_time == 52000)
+    {
+        top->BTNC = 0;
+        top->BTNU = 1;
+        top->BTNL = 0;
+        top->BTNR = 0;
+        top->BTND = 0;
+
+	  top->PS2_DATA = 0;
+        printf("Testcase2\n");
+    }
+    if(main_time == 54000)
+    {
+        top->BTNC = 0;
+        top->BTNU = 0;
+        top->BTNL = 1;
+        top->BTNR = 0;
+        top->BTND = 0;
+
+	  top->PS2_DATA = 1;
+        printf("Testcase3\n");
+    }
+    if(main_time == 56000)
+    {
+        top->BTNC = 0;
+        top->BTNU = 0;
+        top->BTNL = 0;
+        top->BTNR = 1;
+        top->BTND = 0;
+
+	  top->PS2_DATA = 0;
+        printf("Testcase4\n");
+    }
+    if(main_time == 58000)
+    {
+        top->BTNC = 0;
+        top->BTNU = 0;
+        top->BTNL = 0;
+        top->BTNR = 0;
+        top->BTND = 1;
+
+	  top->PS2_DATA = 0;
         printf("Testcase5\n");
     }
   }

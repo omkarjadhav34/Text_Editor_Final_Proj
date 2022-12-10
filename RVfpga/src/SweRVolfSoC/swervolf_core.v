@@ -415,7 +415,9 @@ module swervolf_core
    // VGA
    
     vga vga(
-    	.keycode(keycode),
+        // control inputs
+        .keycode(keycode),                  //active high test mode enable
+    	
         // VGA clock and outputs
         .vga_clk(clk_vga), //31.5MHz for 640x480
         .vga_r(vga_r), 

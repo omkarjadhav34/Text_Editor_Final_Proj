@@ -18,8 +18,10 @@
 -CFLAGS -I../src/SweRVolfSoC/Peripherals/ptc
 +incdir+../src/SweRVolfSoC/Peripherals/gpio
 -CFLAGS -I../src/SweRVolfSoC/Peripherals/gpio
-+incdir+../src/SweRVolfSoC/Peripherals/pushbutton
--CFLAGS -I../src/SweRVolfSoC/Peripherals/pushbutton
++incdir+../src/SweRVolfSoC/Peripherals/Keyboard
+-CFLAGS -I../src/SweRVolfSoC/Peripherals/Keyboard
++incdir+../src/SweRVolfSoC/Peripherals/vga
+-CFLAGS -I../src/SweRVolfSoC/Peripherals/vga
 +incdir+../src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_common_1.0.3
 -CFLAGS -I../src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_common_1.0.3
 +incdir+../src/SweRVolfSoC/Interconnect/WishboneInterconnect
@@ -208,7 +210,8 @@
 ../src/SweRVolfSoC/Interconnect/AxiInterconnect/axi_intercon.sv
 ../src/SweRVolfSoC/Interconnect/WishboneInterconnect/wb_intercon.v
 
-../src/SweRVolfSoC/Peripherals/pushbutton/pushbutton.v
+../src/SweRVolfSoC/Peripherals/Keyboard/keyboard.v
+../src/SweRVolfSoC/Peripherals/vga/vga.v
 ../src/SweRVolfSoC/Peripherals/gpio/gpio_top.v
 
 ../src/SweRVolfSoC/Peripherals/ptc/ptc_top.v
